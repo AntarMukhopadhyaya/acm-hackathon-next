@@ -22,11 +22,6 @@ const logoStyle = {
   cursor: "pointer",
 };
 
-// interface NavBarprops {
-//   mode: PaletteMode;
-
-// }
-
 function NavBar( ) {
   const [open, setOpen] = React.useState(false);
 

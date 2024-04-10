@@ -14,7 +14,7 @@ export default function Hero() {
       <Grid
         container
         spacing={1}
-        sm="auto"
+
         sx={(theme) => ({
           width: "100%",
           // backgroundImage:
