@@ -12,6 +12,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
+import Paper from "@mui/material/Paper"; 
 
 import "./fonts/font.css";
 import Link from "next/link";
@@ -72,18 +73,12 @@ function NavBar( ) {
               justifyContent: "space-between",
               flexShrink: 0,
               borderRadius: "999px",
-              bgcolor:
-                theme.palette.mode === "light"
-                  ? "rgba(255, 255, 255, 0.4)"
-                  : "rgba(0, 0, 0, 0.4)",
+              bgcolor: "rgba(0, 0, 0, 0.4)",
               backdropFilter: "blur(24px)",
               height: "90px",
               border: "1px solid",
               borderColor: "divider",
-              boxShadow:
-                theme.palette.mode === "light"
-                  ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
-                  : "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
+              boxShadow: "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
             })}
           >
             <Box
@@ -101,12 +96,14 @@ function NavBar( ) {
                   mr: "40px",
                 }}
               >
-                <img
-                  onClick={() => scrollToSection("hero")}
-                  src= "/images/logo.png"
-                  style={logoStyle}
-                  alt="logo of sitemark"
-                />
+                <Link href="/">
+                  <img
+                    onClick={() => scrollToSection("hero")}
+                    src= "/images/logo.png"
+                    style={logoStyle}
+                    alt="logo of sitemark"
+                  />
+                </Link>
               </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 <MenuItem
@@ -114,9 +111,10 @@ function NavBar( ) {
                 >
                   <Button
                     onClick={handleClick}
-                    aria-controls={openMenu ? "account-menu" : undefined}
+                    aria-controls={openMenu ? "basic-menu" : undefined}
                     aria-haspopup="true"
                     aria-expanded={openMenu ? "true" : undefined}
+          
                   >
                     <Typography
                       variant="body2"
@@ -181,7 +179,6 @@ function NavBar( ) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection("faq")}
                   sx={{ py: "6px", px: "12px" }}
                 >
                   <Typography
@@ -218,7 +215,7 @@ function NavBar( ) {
                   sx={{
                     minWidth: "60dvw",
                     p: 2,
-                    backgroundColor: "background.paper",
+                    backgroundColor: "#0d0d0d",
                     flexGrow: 1,
                   }}
                 >
@@ -232,67 +229,130 @@ function NavBar( ) {
                   >
                 
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
-                    Features
+                  <MenuItem
+                  sx={{ py: "6px", px: "12px" }}
+                >
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontSize="20px"
+                    fontFamily="Varela"
+                  >
+                    <Link href="/">Discover HACKSPIRE</Link>
+                  </Typography>
+                </MenuItem>
+                  <MenuItem>
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontSize="20px"
+                    fontFamily="Varela"
+                  >
+                    <Link href="/executive-team">Executive Team</Link>
+                  </Typography>
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
-                    Testimonials
+                  <MenuItem
+                  onClick={() => scrollToSection("theme")}
+                  sx={{ py: "6px", px: "12px" }}
+                >
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontSize="20px"
+                    fontFamily="Varela"
+                  >
+                    Project Implementation
+                  </Typography>
+                </MenuItem>
+                  <MenuItem>
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontSize="20px"
+                    fontFamily="Varela"
+                  >
+                    <Link href="/guidelines">Guidelines</Link>
+                  </Typography>
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
-                    Highlights
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Pricing
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
+                  <MenuItem onClick={() => scrollToSection('faq')}><Typography
+                    variant="body2"
+                    color="white"
+                    fontSize="20px"
+                    fontFamily="Varela"
+                  >
+                    Idea Template
+                  </Typography></MenuItem>
                 </Box>
               </Drawer>
             </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
-      <Menu
+            <Menu
         anchorEl={anchorEl}
-        id="account-menu"
+        id="basic-menu"
         open={openMenu}
         onClose={handleClose}
         onClick={handleClose}
-        PaperProps={{
-          elevation: 0,
-          sx: {
-            overflow: "visible",
-            filter: "drop-shadow(0px 9px 8px rgba(0,0,0,0.32))",
-            mt: 1.5,
-            "& .MuiAvatar-root": {
-              width: 32,
-              height: 32,
-              ml: -0.5,
-              mr: 1,
-            },
-            "&::before": {
-              content: '""',
-              display: "block",
-              position: "absolute",
-              top: 0,
-              right: 14,
-              width: 10,
-              height: 10,
-              bgcolor: "background.paper",
-              transform: "translateY(-50%) rotate(45deg)",
-              zIndex: 0,
-            },
-          },
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
         }}
-        transformOrigin={{ horizontal: "right", vertical: "top" }}
-        anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+        sx={
+          { mt: "1px", "& .MuiMenu-paper": 
+            { backgroundColor: "rgba(0, 0, 0, 0.4)", backdropFilter: "blur(24px)", boxShadow: "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",},
+   
+          }
+        }
+        // PaperProps={{
+        //   elevation: 0,
+        //   sx: {
+        //     overflow: "visible",
+        //     filter: "drop-shadow(0px 9px 8px rgba(0, 0, 0, 0.4)",
+        //     mt: 1.5,
+        //     "& .MuiAvatar-root": {
+        //       width: 32,
+        //       height: 32,
+        //       ml: -0.5,
+        //       mr: 1,
+        //     },
+        //     "&::before": {
+        //       content: '""',
+        //       display: "block",
+        //       position: "absolute",
+        //       top: 0,
+        //       right: 14,
+        //       width: 10,
+        //       height: 10,
+        //       bgcolor: "drop-shadow(0px 9px 8px rgba(0, 0, 0, 0.4)",
+        //       transform: "translateY(-50%) rotate(45deg)",
+        //       zIndex: 0,
+        //     },
+        //   },
+        // }}
+        // transformOrigin={{ horizontal: "right", vertical: "top" }}
+        // anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <MenuItem onClick={() => scrollToSection("aboutus")}>About HACKSPIRE 2024</MenuItem>
-        <MenuItem onClick={() => scrollToSection("processflow")}>HACKSPIRE Process Flow</MenuItem>
-        <MenuItem onClick={() => scrollToSection("theme")}>HACKSPIRE Themes</MenuItem>
-        <MenuItem onClick={() => scrollToSection("#")}>HACKSPIRE Teams</MenuItem>
-        <MenuItem onClick={() => scrollToSection("prizes")}>HACKSPIRE Rewards & Prizes </MenuItem>
-        <MenuItem onClick={() => scrollToSection("#")}>HACKSPIRE Rules and Regualation</MenuItem>
+        <MenuItem onClick={() => scrollToSection("aboutus")}><Typography color="white"
+                    fontSize="16px"
+                    fontFamily="Varela"
+                    padding="5px">About HACKSPIRE 2024</Typography></MenuItem>
+        <MenuItem onClick={() => scrollToSection("processflow")}><Typography color="white"
+                    fontSize="16px"
+                    fontFamily="Varela" padding="5px">HACKSPIRE Process Flow</Typography></MenuItem>
+        <MenuItem onClick={() => scrollToSection("theme")}><Typography color="white"
+                    fontSize="16px"
+                    fontFamily="Varela" padding="5px">HACKSPIRE Themes</Typography></MenuItem>
+        <MenuItem onClick={() => scrollToSection("#")}><Typography color="white"
+                    fontSize="16px"
+                    fontFamily="Varela" padding="5px">HACKSPIRE Teams</Typography></MenuItem>
+        <MenuItem onClick={() => scrollToSection("prizes")}><Typography color="white"
+                    fontSize="16px"
+                    fontFamily="Varela" padding="5px">HACKSPIRE Rewards & Prizes </Typography></MenuItem>
+        <MenuItem onClick={() => scrollToSection("#")}><Typography color="white"
+                    fontSize="16px"
+                    fontFamily="Varela" padding="5px">HACKSPIRE Rules and Regualation</Typography></MenuItem>
       </Menu>
+          </Toolbar>
+        </Container>
+      </AppBar>
+
     </div>
   );
 }

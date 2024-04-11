@@ -35,13 +35,14 @@ function ThemeSection() {
             color: "#AAE6FF",
           }}
         >
-          Themes
+          THEMES
         </Typography>
         <Typography
           sx={{
             alignSelf: "left",
             width: { sm: "100%", md: "100%" },
             mt: { xs: 5 },
+            mb:{xs:5},
             fontFamily: "Varela",
             fontSize: "22px",
             color: "white",

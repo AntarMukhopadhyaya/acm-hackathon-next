@@ -21,9 +21,10 @@ function AboutSection() {
           sx={{
             fontSize: "clamp(3.5rem, 10vw, 4rem)",
             fontFamily: "blanka",
+            color:"white"
           }}
         >
-          About&nbsp;
+          ABOUT&nbsp;
           <Typography
             component="span"
             variant="h1"
@@ -37,7 +38,7 @@ function AboutSection() {
               color: "primary.light"
             }}
           >
-            us
+            US
           </Typography>
         </Typography>
       </Box>
@@ -111,9 +112,10 @@ function AboutSection() {
               sx={{
                 fontSize: "clamp(3.5rem, 10vw, 4rem)",
                 fontFamily: "blanka",
+                color:"white"
               }}
             >
-              What is
+              WHAT IS
             </Typography>
             <Typography
                 component="span"
@@ -125,11 +127,11 @@ function AboutSection() {
                   pl:{xs:25}
                 }}
               >
-                Hackspire
+                HACKSPIRE
               </Typography>
 
             <Typography
-              color="primary.light"
+              color="white"
               sx={{
                 alignSelf: "left",
                 width: { sm: "100%", md: "100%" },
@@ -148,10 +150,11 @@ function AboutSection() {
               sx={{
                 fontSize: "clamp(3.5rem, 10vw, 4rem)",
                 fontFamily: "blanka",
+                color:"white",
                 pt:{xs:10}
               }}
             >
-              important
+              IMPORTANT
             </Typography>
             <Typography
           variant="h1"
@@ -162,7 +165,7 @@ function AboutSection() {
             pl:{xs:17}
           }}
         >
-          Dates&nbsp;
+          DATES&nbsp;
           <Typography
             component="span"
             variant="h1"
@@ -172,7 +175,7 @@ function AboutSection() {
               color:"white"
             }}
           >
-            And&nbsp;
+            AND&nbsp;
           </Typography>
           <Typography
             component="span"
@@ -183,7 +186,7 @@ function AboutSection() {
               color:"primary.white"
             }}
           >
-            Deadline
+            DEADLINE
           </Typography>
         </Typography>
 
