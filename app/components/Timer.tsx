@@ -37,7 +37,7 @@ function Timer() {
     return () => clearInterval(intervalRef.current);
   }, [days, hours, minutes, seconds]);
   return (
-        <div>
+        <div className="visible max-sm:invisible">
             <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
               <div className="flex flex-col p-2 bg-info rounded-box text-accent-content" data-theme="ligt">
                 <span className="countdown font-blanka text-4xl">

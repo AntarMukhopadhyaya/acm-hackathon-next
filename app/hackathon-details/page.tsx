@@ -1,3 +1,5 @@
+"use Client"
+
 // import "../components/styles/details.css"
 import Logo from "./Logo.png"
 import College from "./College.jpeg"
@@ -23,6 +25,9 @@ function Home() {
           alignSelf: "center",
           textAlign: "center",
           paddingTop: "150px",
+          display:{xs:'flex'},
+          justifyContent: {xs:'center'},
+          alignItems:{xs:'center'},
         }}
       >
           <Typography
@@ -49,40 +54,48 @@ function Home() {
             style={{}}
           />
       </Box>
-      <Box sx={{alignSelf: "center",
-              textAlign: "center",
-              paddingTop: "50px",
-      }}>
-      <Typography
-            component="span"
-            variant="h1"
-            sx={{
-              fontSize: "38px",
-              fontFamily: "blanka",
-              color: "primary.light",
-            }}
-          >
-            FUTURE INSTITUTE OF ENGINEERING AND MANAGEMENT
-          </Typography>
-      </Box>
-      <Box sx={{alignSelf: "center",
-              textAlign: "center",
-              paddingTop: "50px",
-          }}>
-      <Typography
-            component="span"
-            variant="h1"
-            sx={{
-              fontSize: "24px",
-              fontFamily: "blanka",
-              color: "white",
-              marginTop: "50px",
-              width:100
-            }}
-          >
-            SONARPUR STATION RD, MISSION PALLY, NARENDRAPUR, KOLKATA, WEST BENGAL 700150
-          </Typography>
-      </Box>
+      <Stack sx={{display:{xs:'flex'},
+          justifyContent: {xs:'center'},
+          alignItems:{xs:'center'},}}>
+        <Box sx={{alignSelf: "center",
+                textAlign: "center",
+                paddingTop: "50px",
+        }}>
+        <Typography
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: {sm:"38px", xs:"28px"},
+                fontFamily: "blanka",
+                color: "primary.light",
+              }}
+            >
+              FUTURE INSTITUTE OF ENGINEERING AND MANAGEMENT
+            </Typography>
+        </Box>
+        <Box sx={{alignSelf: "center",
+                textAlign: "center",
+                paddingTop: "50px",
+                width:{xs:"80%"}
+            }}>
+        <Typography
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: {sm:"24px", xs:"16px"},
+                fontFamily: "blanka",
+                color: "white",
+                marginTop: "50px",
+                width:{sm:100},
+                textAlign: "center",
+                alignSelf: "center",
+        
+              }}
+            >
+              SONARPUR STATION RD, MISSION PALLY, NARENDRAPUR, KOLKATA, WEST BENGAL 700150
+            </Typography>
+        </Box>
+      </Stack>
       <Box className="flex flex-col justify-center items-center mt-10">
       <a href="https://www.google.com/maps/place/Future+Institute+of+Engineering+and+Management/@22.4433497,88.4128536,17z/data=!3m1!4b1!4m6!3m5!1s0x3a0272166e4cb263:0x27f12170efd9ddee!8m2!3d22.4433497!4d88.4154285!16s%2Fm%2F0j7j5ls?entry=ttu" target="_blank">
         <img
@@ -128,9 +141,11 @@ function Home() {
           item
           sm="auto"
           
-          sx={{ width: { xs: "40%", sm: "40%" }, ml:{xs: 40, sm:20} }}
+          sx={{ width: { xs: "80%", sm: "40%" }, ml:{xs:5, sm:20} }}
         >
-          <Stack spacing={2}>
+          <Stack spacing={2} sx={{display:{xs:'flex'},
+          justifyContent: {xs:'center'},
+          alignItems:{xs:'center'},}}>
             <Box sx={{alignSelf: "center",
               textAlign: "center",
               paddingTop: "50px",
@@ -138,7 +153,7 @@ function Home() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: "48px",
+                  fontSize: {sm:"48px",xs:"38px"},
                   fontFamily: "blanka",
                   color:"#AAE6FF"
                 }}
@@ -149,7 +164,7 @@ function Home() {
                   component="span"
                   variant="h1"
                   sx={{
-                    fontSize: "48px",
+                    fontSize: {sm:"48px",xs:"38px"},
                     fontFamily: "blanka",
                     color: "white",
                   }}
@@ -159,7 +174,7 @@ function Home() {
                 <Typography
                 variant="h1"
                 sx={{
-                  fontSize: "48px",
+                  fontSize: {sm:"48px",xs:"38px"},
                   fontFamily: "blanka",
                   color:"#AAE6FF"
                 }}
@@ -241,7 +256,7 @@ function Home() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: "48px",
+                  fontSize: {sm:"48px",xs:"38px"},
                   fontFamily: "blanka",
                   color:"#AAE6FF"
                 }}
@@ -252,7 +267,7 @@ function Home() {
                   component="span"
                   variant="h1"
                   sx={{
-                    fontSize: "48px",
+                    fontSize: {sm:"48px",xs:"38px"},
                     fontFamily: "blanka",
                     color: "white",
                   }}
@@ -285,7 +300,7 @@ function Home() {
             <Typography
                   variant="h1"
                   sx={{
-                    fontSize: "clamp(3.5rem, 10vw, 4rem)",
+                    fontSize: {sm:"48px",xs:"28px"},
                     fontFamily: "blanka",
                     color: "#AAE6FF",
                     pt:"30px",
@@ -297,7 +312,7 @@ function Home() {
                       component="span"
                       variant="h1"
                       sx={{
-                          fontSize: "clamp(3rem, 10vw, 4rem)",
+                        fontSize: {sm:"48px",xs:"28px"},
                           fontFamily: "blanka",
                           color: "white",
                          
@@ -308,7 +323,7 @@ function Home() {
                       component="span"
                       variant="h1"
                       sx={{
-                          fontSize: "clamp(3rem, 10vw, 4rem)",
+                        fontSize: {sm:"48px",xs:"28px"},
                           fontFamily: "blanka",
                           color: "#AAE6FF",
                          
@@ -319,53 +334,45 @@ function Home() {
                     </Typography>
                 </Typography>
         </Box>
-        <Container sx={{
+        <Stack sx={{
             alignSelf: "center",
             textAlign: "center",
             alignContent: "center",
             alignItems: "center",
-            maxWidth: { sm: "90%" }
+            // pl:{sm:10},
+            // maxWidth: { sm: "80%" }
           }}>
-          <Box
-          sx={{
-            display: "flex",
-            alignSelf: "center",
-            textAlign: "left",
-            alignContent: "center",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-                >
           <Typography
             sx={{
               alignSelf: "left",
-              width: { sm: "100%", md: "100%" },
+              width: { sm: "80%", xs: "100%" },
               mt: { xs: 3 },
               fontFamily: "Varela",
-              fontSize: "22px",
+              fontSize: {sm:"22px",xs:"16px"},
               color: "white",
             }}
           >
+            
             Participants can submit their innovative ideas according to their
             choice of concerned theme irrespective of the already present problem
             statements.
           </Typography>
+         
           <img
             src="/images/Prize.png"
             alt="About us image"
             style={{ width: "1000px", height: "auto", cursor: "pointer",alignSelf: "center", }}
           />
-                </Box>
-
-          <Box>
+          
           <Typography
             sx={{
-              alignSelf: "center",
+              alignSelf: "left",
               textAlign:"left",
-              width: { sm: "100%", md: "100%" },
+              width: { sm: "100%", xs: "90%" },
               mt: { xs: 3 },
+             
               fontFamily: "Varela",
-              fontSize: "22px",
+              fontSize: {sm:"22px",xs:"16px"},
               color: "white",
             }}
           ><ul>
@@ -383,9 +390,9 @@ function Home() {
             </li>
           </ul>
           </Typography>
-          </Box>
+
                
-        </Container>
+        </Stack>
 
         
         <Grid
@@ -404,7 +411,7 @@ function Home() {
           item
           sm="auto"
           
-          sx={{ width: { xs: "40%", sm: "40%" }, ml:{xs: 40, sm:20} }}
+          sx={{ width: { xs: "100%", sm: "40%" }, ml:{xs: 5, sm:20} }}
         >
           <Stack spacing={2}>
             <Box sx={{alignSelf: "center",
@@ -414,7 +421,7 @@ function Home() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: "48px",
+                  fontSize: {sm:"48px",xs:"38px"},
                   fontFamily: "blanka",
                   color:"#AAE6FF"
                 }}
@@ -427,7 +434,7 @@ function Home() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {sm:"22px",xs:"16px"},
                   fontFamily: "Varela",
                   color:"#1DD8FE",
                   marginTop: "10px",

@@ -12,29 +12,26 @@ export default function Hero() {
   return (
     <Stack id="hero" alignContent="center" sx={{pb:{xs:20},pt:{xs:10}}}>
       <Grid
+      className="sm:max-lg:flex sm:max-lg:justify-center sm:max-lg:text-center"
         container
         spacing={1}
 
         sx={(theme) => ({
           width: "100%",
-          // backgroundImage:
-          //   theme.palette.mode === 'light'
-          //     ? 'linear-gradient(to left, #aad1fa, #FFF)'
-          //     : `linear-gradient(#02294F, ${alpha('#090E10', 0.0)})`,
-          [theme.breakpoints.down("sm")]: {
+          [theme.breakpoints.down("xs")]: {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
           },
 
-          pt: { xs: 3, sm: 15 },
-          pl: { sm: 15 },
+          pt: { sm: 15 },
+          pl: { sm: 15,},
         })}
       >
         <Grid
           item
           sm="auto"
-          sx={{ width: { xs: "40%", sm: "40%" }, mt: { xs: 40, sm: 8 } }}
+          sx={{ width: { xs: "80%", sm: "40%" }, mt: { xs: 10, sm: 8 },}}
         >
           <Stack spacing={2}>
             <img
@@ -61,7 +58,7 @@ export default function Hero() {
                 width: { sm: "100%", md: "100%" },
                 fontFamily: "popBold",
                 fontSize: "25px",
-                color: "primary.light",
+                color: "#5DB8DE",
               }}
             >
               FIEM ACM STUDENT CHAPTER
@@ -82,10 +79,7 @@ export default function Hero() {
               sx={{
                 fontSize: "clamp(1rem, 2vw, 2rem)",
                 fontFamily: "blanka",
-                color: (theme) =>
-                  theme.palette.mode === "light"
-                    ? "primary.main"
-                    : "primary.light",
+                color: "#1DD8FE"
               }}
             >
               <TypeAnimation
@@ -105,6 +99,7 @@ export default function Hero() {
               />
             </Typography>
             <img
+            className="sm:max-lg:self-center"
               src="/images/fiemacm.png"
               alt="logo of HACKSPIRE"
               style={{ width: "200px", height: "auto", cursor: "pointer" }}
@@ -143,6 +138,7 @@ export default function Hero() {
           </Stack>
         </Grid>
         <Grid
+        className="visible max-sm:invisible"
           item
           sx={{
             pl: { sm: 45, xs: 90 },
