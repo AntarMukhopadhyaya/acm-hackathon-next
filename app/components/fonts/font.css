@@ -17,9 +17,5 @@
   }
   @font-face {
     font-family: 'blanka';
-    src: url('./Blanka.otf');
-  }
-  @font-face {
-    font-family: 'blanka';
     src: url('./Poppins-Black.ttf');
   }

@@ -43,7 +43,7 @@ export default function Hero() {
               style={{ width: "600px", height: "auto", cursor: "pointer" }}
             />
             <Typography
-              color="text.secondary"
+              color="white"
               sx={{
                 alignSelf: "left",
                 width: { sm: "100%", md: "100%" },
