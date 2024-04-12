@@ -96,7 +96,7 @@ function FooterSection() {
                     www.hackspire.org.in
                   </Typography>
         </div>
-        <Box className="items-center text-center flex flex-row mt-5" sx={{width:{xs:30, sm:100}, marginLeft:{sm:-32, xs:-28}}}>
+        <Box className="items-center text-center flex flex-row mt-5" sx={{width:{xs:30, sm:100}, marginLeft:{sm:-32, xs:-20}}}>
         <img
             src="/images/facebook.png"
             alt="about1"

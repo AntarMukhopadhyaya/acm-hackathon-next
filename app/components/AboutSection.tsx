@@ -4,7 +4,6 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
-
 import "./fonts/font.css";
 
 function AboutSection() {
@@ -19,9 +18,9 @@ function AboutSection() {
         <Typography
           variant="h1"
           sx={{
-            fontSize: "clamp(3.5rem, 10vw, 4rem)",
+            fontSize: { sm: "48px", xs: "38px" },
             fontFamily: "blanka",
-            color:"white"
+            color: "white",
           }}
         >
           ABOUT&nbsp;
@@ -29,13 +28,13 @@ function AboutSection() {
             component="span"
             variant="h1"
             sx={{
-              fontSize: "clamp(3rem, 10vw, 4rem)",
+              fontSize: { sm: "48px", xs: "38px" },
               fontFamily: "blanka",
               // color: (theme) =>
               //   theme.palette.mode === "light"
               //     ? "primary.main"
               //     : "primary.light",
-              color: "primary.light"
+              color: "#AAE6FF",
             }}
           >
             US
@@ -45,13 +44,13 @@ function AboutSection() {
       <Container>
         <Container
           sx={{
-            mt: { xs: 8, sm: 10 },
+            mt: { sm: 10 },
             display: "flex",
             alignSelf: "center",
             alignContent: "middle ",
-            height: "680px",
+            height: { sm: "680px" },
             alignItems: "center",
-            pt: { xs: 20, sm: 10 },
+            pt: { xs: 5, sm: 10 },
             pb: { xs: 8, sm: 12 },
             // [theme.breakpoints.up("xs")]: {
             //   backgroundSize: "cover",
@@ -79,7 +78,6 @@ function AboutSection() {
         sm="auto"
         sx={{
           width: "100%",
-     
 
           pt: { xs: 0, sm: 15 },
           pl: { sm: 15 },
@@ -88,10 +86,9 @@ function AboutSection() {
         <Grid
           item
           sx={{
-            mt:{xs:5},
+            mt: { xs: 5 },
             pl: { sm: 45, xs: 90 },
             display: { xs: "none", sm: "block" },
-            
           }}
         >
           <img
@@ -103,32 +100,35 @@ function AboutSection() {
         <Grid
           item
           sm="auto"
-          
-          sx={{ width: { xs: "40%", sm: "40%" }, ml:{xs: 40} }}
+          sx={{
+            width: { xs: "40%", sm: "40%" },
+            ml: { sm: 40 },
+            display: { xs: "none", sm: "block" },
+          }}
         >
           <Stack spacing={2}>
             <Typography
               variant="h1"
               sx={{
-                fontSize: "clamp(3.5rem, 10vw, 4rem)",
+                fontSize: { sm: "48px", xs: "38px" },
                 fontFamily: "blanka",
-                color:"white"
+                color: "white",
               }}
             >
               WHAT IS
             </Typography>
             <Typography
-                component="span"
-                variant="h1"
-                sx={{
-                  fontSize: "clamp(3rem, 10vw, 4rem)",
-                  fontFamily: "blanka",
-                  color: "primary.light",
-                  pl:{xs:25}
-                }}
-              >
-                HACKSPIRE
-              </Typography>
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: { sm: "48px", xs: "38px" },
+                fontFamily: "blanka",
+                color: "#AAE6FF",
+                pl: { sm: 25 },
+              }}
+            >
+              HACKSPIRE
+            </Typography>
 
             <Typography
               color="white"
@@ -137,7 +137,7 @@ function AboutSection() {
                 width: { sm: "100%", md: "100%" },
                 fontFamily: "Varela",
                 fontSize: "22px",
-                pt:{xs:5}
+                pt: { xs: 5 },
               }}
             >
               Hackspire is a statewide initiative to provide engineering
@@ -148,118 +148,279 @@ function AboutSection() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: "clamp(3.5rem, 10vw, 4rem)",
+                fontSize: { sm: "48px", xs: "38px" },
                 fontFamily: "blanka",
-                color:"white",
-                pt:{xs:10}
+                color: "white",
+                pt: { xs: 10 },
               }}
             >
               IMPORTANT
             </Typography>
             <Typography
-          variant="h1"
-          sx={{
-            fontSize: "clamp(2.5rem, 10vw, 2rem)",
-            fontFamily: "blanka",
-            color:"primary.light",
-            pl:{xs:17}
-          }}
-        >
-          DATES&nbsp;
+              variant="h1"
+              sx={{
+                fontSize: { sm: "48px", xs: "38px" },
+                fontFamily: "blanka",
+                color: "#AAE6FF",
+                pl: { sm: 17 },
+              }}
+            >
+              DATES&nbsp;
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  fontSize: { sm: "48px", xs: "38px" },
+                  fontFamily: "blanka",
+                  color: "white",
+                }}
+              >
+                AND&nbsp;
+              </Typography>
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  fontSize: { sm: "48px", xs: "38px" },
+                  fontFamily: "blanka",
+                  color: "#AAE6FF",
+                }}
+              >
+                DEADLINE
+              </Typography>
+            </Typography>
+
+            <Typography
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: "22px",
+                fontFamily: "Varela",
+                color: "#1DD8FE",
+                pt: { xs: 5 },
+              }}
+            >
+              HACKSPIRE Registration Starts :&nbsp;
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  fontSize: "22px",
+                  fontFamily: "Varela",
+                  color: "white",
+                }}
+              >
+                13th June, 2024
+              </Typography>
+            </Typography>
+            <Typography
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: "22px",
+                fontFamily: "Varela",
+                color: "#1DD8FE",
+              }}
+            >
+              Registration Closed :&nbsp;
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  fontSize: "22px",
+                  fontFamily: "Varela",
+                  color: "white",
+                }}
+              >
+                13th June, 2024
+              </Typography>
+            </Typography>
+            <Typography
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: "22px",
+                fontFamily: "Varela",
+                color: "#1DD8FE",
+              }}
+            >
+              HACKSPIRE :&nbsp;
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  fontSize: "22px",
+                  fontFamily: "Varela",
+                  color: "white",
+                }}
+              >
+                13th June, 2024
+              </Typography>
+            </Typography>
+          </Stack>
+        </Grid>
+      </Grid>
+      <Stack spacing={2} sx={{ display: { sm: "none" }, width: "100%" }}>
+        <Box sx={{textAlign:'center'}}>
           <Typography
-            component="span"
             variant="h1"
             sx={{
-              fontSize: "clamp(2.5rem, 10vw, 2rem)",
+              fontSize: { sm: "48px", xs: "30px" },
               fontFamily: "blanka",
-              color:"white"
+              color: "white",
             }}
           >
-            AND&nbsp;
+            WHAT IS
           </Typography>
           <Typography
             component="span"
             variant="h1"
             sx={{
-              fontSize: "clamp(2.5rem, 10vw, 2rem)",
+              fontSize: { sm: "48px", xs: "30px" },
               fontFamily: "blanka",
-              color:"primary.white"
+              color: "#AAE6FF",
+            }}
+          >
+            HACKSPIRE
+          </Typography>
+        </Box>
+
+        <Typography
+          color="white"
+          sx={{
+            alignSelf: "center",
+            width: '90%',
+            fontFamily: "Varela",
+            fontSize: { sm: "22px", xs: "16px" },
+          }}
+        >
+          Hackspire is a statewide initiative to provide engineering students to
+          solve some of the common problems we face in our daily life, and thus
+          inculcate a culture of product innovation and a mindset of real time
+          problem solving.
+        </Typography>
+        <Box sx={{textAlign:'center', pt:5}}>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { sm: "48px", xs: "30px" },
+              fontFamily: "blanka",
+              color: "white",
+              pl: { sm: 17 },
+            }}
+          >
+            IMPORTANT&nbsp;
+          <Typography
+            component="span"
+            variant="h1"
+            sx={{
+              fontSize: { sm: "48px", xs: "30px" },
+              fontFamily: "blanka",
+              color: "#AAE6FF",
+            }}
+          >
+            DATES
+          </Typography>
+          </Typography>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { sm: "48px", xs: "30px" },
+              fontFamily: "blanka",
+              color: "#AAE6FF",
+              pl: { sm: 17 },
+            }}
+          >
+            AND&nbsp;
+          <Typography
+            component="span"
+            variant="h1"
+            sx={{
+              fontSize: { sm: "48px", xs: "30px" },
+              fontFamily: "blanka",
+              color: "white",
             }}
           >
             DEADLINE
           </Typography>
-        </Typography>
+          </Typography>
+        </Box>
 
-        <Typography
+        <Stack sx={{
+            alignSelf: "center",
+            width: '90%',
+            fontFamily: "Varela",
+            fontSize: { sm: "22px", xs: "16px" },
+          }}>
+          <Typography
             component="span"
             variant="h1"
             sx={{
-              fontSize:"22px",
+              fontSize: { sm: "22px", xs: "16px" },
               fontFamily: "Varela",
-              color:"#1DD8FE",
-              pt:{xs:5}
+              color: "#1DD8FE",
+              pt: { xs: 5 },
             }}
           >
             HACKSPIRE Registration Starts :&nbsp;
             <Typography
-            component="span"
-            variant="h1"
-            sx={{
-              fontSize:"22px",
-              fontFamily: "Varela",
-              color:"white"
-            }}
-          >
-            13th June, 2024
-          </Typography>
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: { sm: "22px", xs: "16px" },
+                fontFamily: "Varela",
+                color: "white",
+              }}
+            >
+              13th June, 2024
+            </Typography>
           </Typography>
           <Typography
             component="span"
             variant="h1"
             sx={{
-              fontSize:"22px",
+              fontSize: { sm: "22px", xs: "16px" },
               fontFamily: "Varela",
-              color:"#1DD8FE"
+              color: "#1DD8FE",
             }}
           >
             Registration Closed :&nbsp;
             <Typography
-            component="span"
-            variant="h1"
-            sx={{
-              fontSize:"22px",
-              fontFamily: "Varela",
-              color:"white"
-            }}
-          >
-            13th June, 2024
-          </Typography>
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: { sm: "22px", xs: "16px" },
+                fontFamily: "Varela",
+                color: "white",
+              }}
+            >
+              13th June, 2024
+            </Typography>
           </Typography>
           <Typography
             component="span"
             variant="h1"
             sx={{
-              fontSize:"22px",
+              fontSize: { sm: "22px", xs: "16px" },
               fontFamily: "Varela",
-              color:"#1DD8FE"
+              color: "#1DD8FE",
             }}
           >
             HACKSPIRE :&nbsp;
             <Typography
-            component="span"
-            variant="h1"
-            sx={{
-              fontSize:"22px",
-              fontFamily: "Varela",
-              color:"white"
-            }}
-          >
-            13th June, 2024
+              component="span"
+              variant="h1"
+              sx={{
+                fontSize: { sm: "22px", xs: "16px" },
+                fontFamily: "Varela",
+                color: "white",
+              }}
+            >
+              13th June, 2024
+            </Typography>
           </Typography>
-          </Typography>
-          </Stack>
-        </Grid>
-      </Grid>
+        </Stack>
+      </Stack>
     </Box>
   );
 }

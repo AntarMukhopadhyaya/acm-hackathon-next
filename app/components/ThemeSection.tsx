@@ -17,10 +17,27 @@ function ThemeSection() {
     slidesToScroll: 1,
     speed: 500,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
-    <Container id="theme" sx={{ mt: { xs: 20 }, maxWidth: { xs: "1400px" } }}>
+    <Container id="theme" sx={{ mt: { xs: 20 }, maxWidth: { xs: "1300px" } }}>
       <Box
         sx={{
           alignSelf: "center",
@@ -30,7 +47,7 @@ function ThemeSection() {
         <Typography
           variant="h1"
           sx={{
-            fontSize: "clamp(3.5rem, 10vw, 4rem)",
+            fontSize: {sm:"48px",xs:"38px"},
             fontFamily: "blanka",
             color: "#AAE6FF",
           }}
@@ -44,7 +61,7 @@ function ThemeSection() {
             mt: { xs: 5 },
             mb:{xs:5},
             fontFamily: "Varela",
-            fontSize: "22px",
+            fontSize: {sm:"22px",xs:"16px"},
             color: "white",
           }}
         >
@@ -321,7 +338,7 @@ function ThemeSection() {
             width: { sm: "100%", md: "100%" },
             mt: { xs: 3 },
             fontFamily: "Varela",
-            fontSize: "22px",
+            fontSize: {sm:"22px",xs:"16px"},
             color: "white",
           }}
         >

@@ -10,7 +10,6 @@ export default function Home() {
     <main className="">
       <Hero />
       <AboutSection />
-
       <ThemeSection />
       <PrizeSection />
       <Sponsors />

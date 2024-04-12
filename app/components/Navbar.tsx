@@ -1,4 +1,4 @@
-"use client" ;
+"use client";
 
 import * as React from "react";
 import { PaletteMode } from "@mui/material";
@@ -12,7 +12,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
-import Paper from "@mui/material/Paper"; 
+import Paper from "@mui/material/Paper";
 
 import "./fonts/font.css";
 import Link from "next/link";
@@ -23,7 +23,7 @@ const logoStyle = {
   cursor: "pointer",
 };
 
-function NavBar( ) {
+function NavBar() {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
@@ -74,11 +74,12 @@ function NavBar( ) {
               flexShrink: 0,
               borderRadius: "999px",
               bgcolor: "rgba(0, 0, 0, 0.4)",
-              backdropFilter: "blur(24px)",
+              backdropFilter: "blur(10px)",
               height: "90px",
               border: "1px solid",
               borderColor: "divider",
-              boxShadow: "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
+              boxShadow:
+                "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
             })}
           >
             <Box
@@ -92,29 +93,25 @@ function NavBar( ) {
             >
               <Box
                 sx={{
-            
                   mr: "40px",
                 }}
               >
                 <Link href="/">
                   <img
                     onClick={() => scrollToSection("hero")}
-                    src= "/images/logo.png"
+                    src="/images/logo.png"
                     style={logoStyle}
                     alt="logo of sitemark"
                   />
                 </Link>
               </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <MenuItem
-                  sx={{ py: "6px", px: "12px" }}
-                >
+                <MenuItem sx={{ py: "6px", px: "12px" }}>
                   <Button
                     onClick={handleClick}
                     aria-controls={openMenu ? "basic-menu" : undefined}
                     aria-haspopup="true"
                     aria-expanded={openMenu ? "true" : undefined}
-          
                   >
                     <Typography
                       variant="body2"
@@ -127,6 +124,18 @@ function NavBar( ) {
                   </Button>
                 </MenuItem>
                 <MenuItem
+                  sx={{ py: "6px", px: "12px" }}
+                >
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontSize="20px"
+                    fontFamily="Varela"
+                  >
+                    Problem Statements
+                  </Typography>
+                </MenuItem>
+                <MenuItem
                   onClick={() => scrollToSection("processflow")}
                   sx={{ py: "6px", px: "12px" }}
                 >
@@ -137,19 +146,6 @@ function NavBar( ) {
                     fontFamily="Varela"
                   >
                     <Link href="/executive-team">Executive Team</Link>
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection("theme")}
-                  sx={{ py: "6px", px: "12px" }}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="20px"
-                    fontFamily="Varela"
-                  >
-                    Project Implementation
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -178,6 +174,16 @@ function NavBar( ) {
                     Idea Template
                   </Typography>
                 </MenuItem>
+                <MenuItem sx={{ py: "6px", px: "12px" }}>
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontSize="20px"
+                    fontFamily="Varela"
+                  >
+                    <Link href="/hackathon-details">Hackathon Details</Link>
+                  </Typography>
+                </MenuItem>
                 <MenuItem
                   sx={{ py: "6px", px: "12px" }}
                 >
@@ -187,7 +193,7 @@ function NavBar( ) {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    <Link href="/hackathon-details">Hackathon Details</Link>
+                    FAQ
                   </Typography>
                 </MenuItem>
               </Box>
@@ -198,8 +204,7 @@ function NavBar( ) {
                 gap: 0.5,
                 alignItems: "center",
               }}
-            >
-            </Box>
+            ></Box>
             <Box sx={{ display: { sm: "", md: "none" } }}>
               <Button
                 variant="text"
@@ -210,7 +215,10 @@ function NavBar( ) {
               >
                 <MenuIcon />
               </Button>
-              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} sx={{backgroundColor: "rgba(0, 0, 0, 0.4)",
+                  backdropFilter: "blur(4px)",
+                  boxShadow:
+                    "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",}}>
                 <Box
                   sx={{
                     minWidth: "60dvw",
@@ -226,9 +234,17 @@ function NavBar( ) {
                       alignItems: "end",
                       flexGrow: 1,
                     }}
-                  >
-                
-                  </Box>
+                  ></Box>
+                  <MenuItem sx={{ py: "6px", px: "12px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/">Discover HACKSPIRE</Link>
+                    </Typography>
+                  </MenuItem>
                   <MenuItem
                   sx={{ py: "6px", px: "12px" }}
                 >
@@ -238,21 +254,50 @@ function NavBar( ) {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    <Link href="/">Discover HACKSPIRE</Link>
+                    Problem Statements
                   </Typography>
                 </MenuItem>
                   <MenuItem>
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="20px"
-                    fontFamily="Varela"
-                  >
-                    <Link href="/executive-team">Executive Team</Link>
-                  </Typography>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/executive-team">Executive Team</Link>
+                    </Typography>
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/guidelines">Guidelines</Link>
+                    </Typography>
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection("faq")}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      Idea Template
+                    </Typography>
+                  </MenuItem>
+                  <MenuItem sx={{ py: "6px", px: "12px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/hackathon-details">Hackathon Details</Link>
+                    </Typography>
                   </MenuItem>
                   <MenuItem
-                  onClick={() => scrollToSection("theme")}
                   sx={{ py: "6px", px: "12px" }}
                 >
                   <Typography
@@ -261,98 +306,96 @@ function NavBar( ) {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    Project Implementation
+                    FAQ
                   </Typography>
                 </MenuItem>
-                  <MenuItem>
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="20px"
-                    fontFamily="Varela"
-                  >
-                    <Link href="/guidelines">Guidelines</Link>
-                  </Typography>
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}><Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="20px"
-                    fontFamily="Varela"
-                  >
-                    Idea Template
-                  </Typography></MenuItem>
                 </Box>
               </Drawer>
             </Box>
             <Menu
-        anchorEl={anchorEl}
-        id="basic-menu"
-        open={openMenu}
-        onClose={handleClose}
-        onClick={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
-        sx={
-          { mt: "1px", "& .MuiMenu-paper": 
-            { backgroundColor: "rgba(0, 0, 0, 0.4)", backdropFilter: "blur(24px)", boxShadow: "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",},
-   
-          }
-        }
-        // PaperProps={{
-        //   elevation: 0,
-        //   sx: {
-        //     overflow: "visible",
-        //     filter: "drop-shadow(0px 9px 8px rgba(0, 0, 0, 0.4)",
-        //     mt: 1.5,
-        //     "& .MuiAvatar-root": {
-        //       width: 32,
-        //       height: 32,
-        //       ml: -0.5,
-        //       mr: 1,
-        //     },
-        //     "&::before": {
-        //       content: '""',
-        //       display: "block",
-        //       position: "absolute",
-        //       top: 0,
-        //       right: 14,
-        //       width: 10,
-        //       height: 10,
-        //       bgcolor: "drop-shadow(0px 9px 8px rgba(0, 0, 0, 0.4)",
-        //       transform: "translateY(-50%) rotate(45deg)",
-        //       zIndex: 0,
-        //     },
-        //   },
-        // }}
-        // transformOrigin={{ horizontal: "right", vertical: "top" }}
-        // anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
-      >
-        <MenuItem onClick={() => scrollToSection("aboutus")}><Typography color="white"
-                    fontSize="16px"
-                    fontFamily="Varela"
-                    padding="5px">About HACKSPIRE 2024</Typography></MenuItem>
-        <MenuItem onClick={() => scrollToSection("processflow")}><Typography color="white"
-                    fontSize="16px"
-                    fontFamily="Varela" padding="5px">HACKSPIRE Process Flow</Typography></MenuItem>
-        <MenuItem onClick={() => scrollToSection("theme")}><Typography color="white"
-                    fontSize="16px"
-                    fontFamily="Varela" padding="5px">HACKSPIRE Themes</Typography></MenuItem>
-        <MenuItem onClick={() => scrollToSection("#")}><Typography color="white"
-                    fontSize="16px"
-                    fontFamily="Varela" padding="5px">HACKSPIRE Teams</Typography></MenuItem>
-        <MenuItem onClick={() => scrollToSection("prizes")}><Typography color="white"
-                    fontSize="16px"
-                    fontFamily="Varela" padding="5px">HACKSPIRE Rewards & Prizes </Typography></MenuItem>
-        <MenuItem onClick={() => scrollToSection("#")}><Typography color="white"
-                    fontSize="16px"
-                    fontFamily="Varela" padding="5px">HACKSPIRE Rules and Regualation</Typography></MenuItem>
-      </Menu>
+              anchorEl={anchorEl}
+              id="basic-menu"
+              open={openMenu}
+              onClose={handleClose}
+              onClick={handleClose}
+              MenuListProps={{
+                "aria-labelledby": "basic-button",
+              }}
+              sx={{
+                mt: "1px",
+                "& .MuiMenu-paper": {
+                  backgroundColor: "rgba(0, 0, 0, 0.4)",
+                  backdropFilter: "blur(24px)",
+                  boxShadow:
+                    "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
+                },
+              }}
+
+            >
+              <MenuItem onClick={() => scrollToSection("aboutus")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  About HACKSPIRE 2024
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={() => scrollToSection("processflow")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  HACKSPIRE Process Flow
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={() => scrollToSection("theme")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  HACKSPIRE Themes
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={() => scrollToSection("#")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  HACKSPIRE Teams
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={() => scrollToSection("prizes")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  HACKSPIRE Rewards & Prizes{" "}
+                </Typography>
+              </MenuItem>
+              <MenuItem onClick={() => scrollToSection("#")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  HACKSPIRE Rules and Regualation
+                </Typography>
+              </MenuItem>
+            </Menu>
           </Toolbar>
         </Container>
       </AppBar>
-
     </div>
   );
 }

@@ -10,7 +10,7 @@ const ContactUs = () => {
   return (
     <div>
       <button
-        className="btn btn-circle fixed bottom-0 right-0 m-5 btn-info btn-lg "
+        className="btn btn-circle fixed bottom-0 right-0 m-5 btn-info lg:btn-lg "
         onClick={() => {
           if (document) {
             (
@@ -21,7 +21,7 @@ const ContactUs = () => {
       >
         {' '}
         <IoMdCall
-          className="h-8 w-8"
+          className="lg:h-8 lg:w-8 sm:h-5 sm:w-5"
           style={{
             color: '#000000',
           }}
