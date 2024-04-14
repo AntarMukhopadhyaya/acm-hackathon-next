@@ -13,7 +13,7 @@ const Guidelines = () => {
           </h1>
 
           <article
-            className="rounded-lg border text-left bg-white mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
+            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
             <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
@@ -34,7 +34,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left bg-white mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
+            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
             <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
@@ -51,7 +51,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left bg-white mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
+            className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
             <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
@@ -70,7 +70,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left bg-white mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
+            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
             <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
@@ -119,7 +119,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left bg-white mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
+            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
             <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
@@ -138,7 +138,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left bg-white mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
+            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
             <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
@@ -167,7 +167,7 @@ const Guidelines = () => {
           </article>
 
           <article
-            className="rounded-lg border text-left bg-white mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
+            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
             <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
