@@ -132,7 +132,7 @@ function NavBar() {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    Problem Statements
+                    <Link href="/problem-statement">Problem Statements</Link>
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -219,7 +219,7 @@ function NavBar() {
                   backdropFilter: "blur(4px)",
                   boxShadow:
                     "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",}}>
-                <Box
+                <Box onClick={toggleDrawer(false)}
                   sx={{
                     minWidth: "60dvw",
                     p: 2,
@@ -235,7 +235,7 @@ function NavBar() {
                       flexGrow: 1,
                     }}
                   ></Box>
-                  <MenuItem sx={{ py: "6px", px: "12px" }}>
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
                       color="white"
@@ -246,7 +246,7 @@ function NavBar() {
                     </Typography>
                   </MenuItem>
                   <MenuItem
-                  sx={{ py: "6px", px: "12px" }}
+                  sx={{ py: "20px", px: "12px" }}
                 >
                   <Typography
                     variant="body2"
@@ -254,10 +254,10 @@ function NavBar() {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    Problem Statements
+                    <Link href="/problem-statement">Problem Statements</Link>
                   </Typography>
                 </MenuItem>
-                  <MenuItem>
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
                       color="white"
@@ -267,7 +267,7 @@ function NavBar() {
                       <Link href="/executive-team">Executive Team</Link>
                     </Typography>
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
                       color="white"
@@ -276,8 +276,8 @@ function NavBar() {
                     >
                       <Link href="/guidelines">Guidelines</Link>
                     </Typography>
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("faq")}>
+                  </MenuItem >
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
                       color="white"
@@ -287,7 +287,7 @@ function NavBar() {
                       Idea Template
                     </Typography>
                   </MenuItem>
-                  <MenuItem sx={{ py: "6px", px: "12px" }}>
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
                       color="white"
@@ -298,7 +298,7 @@ function NavBar() {
                     </Typography>
                   </MenuItem>
                   <MenuItem
-                  sx={{ py: "6px", px: "12px" }}
+                  sx={{ py: "20px", px: "12px" }}
                 >
                   <Typography
                     variant="body2"
