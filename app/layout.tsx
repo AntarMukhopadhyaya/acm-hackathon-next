@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 import ContactUs from './components/ContactUs';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,6 +38,7 @@ export default function RootLayout({
             <Footer />
           </Box>
           <Analytics />
+          <SpeedInsights />
         </AppRouterCacheProvider>
       </body>
     </html>
