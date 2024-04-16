@@ -5,7 +5,6 @@ import ThemeSection from "./components/ThemeSection";
 import ProcessFlow from "./components/ProcessFlow";
 import PrizeSection from "./components/PrizeSection";
 import Sponsors from "./components/SponsorsSection";
-import ProcessFlow2 from "./components/ProcessFlow";
 
 export default function Home() {
   return (

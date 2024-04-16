@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+
 
 const Guidelines = () => {
   return (
@@ -95,6 +95,7 @@ const Guidelines = () => {
                 for the Primary Registration and Idea Submission round.
               </li>
               <li>
+                <p>
                 After Team formation pertaining to the eligibility criteria
                 mentioned above, teams should choose a theme and a matching
                 problem statement from the predefined Problem Statement List.
@@ -102,12 +103,16 @@ const Guidelines = () => {
                 the given themes through “OPEN INNOVATION” category. In that
                 case, the problem statement should be relevant to the theme and
                 clearly defined.
+                </p>
               </li>
               <li>
+                <p>
                 After Problem Statement selection, participants should create a
                 PPT based on the Idea Template available on the HackSpire
                 portal. A PDF of the same should be submitted during the Idea
                 Submission Round.
+                </p>
+        
               </li>
               <li>
                 <span className="font-bold text-white">

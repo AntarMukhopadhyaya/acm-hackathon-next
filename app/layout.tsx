@@ -3,10 +3,11 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import ContactUs from './components/ContactUs';
 import './globals.css';
-import { ThemeProvider } from '@mui/material/styles';
+import { Analytics } from '@vercel/analytics/react';
+
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 const inter = Inter({ subsets: ['latin'] });
-import getLPTheme from './theme';
+
 import NavBar from './components/Navbar';
 import { Box, CssBaseline } from '@mui/material';
 import Footer from './components/FooterSection';
@@ -21,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
 
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <AppRouterCacheProvider>
           <CssBaseline />
           <Box
@@ -36,6 +37,7 @@ export default function RootLayout({
             <ContactUs />
             <Footer />
           </Box>
+          <Analytics />
         </AppRouterCacheProvider>
       </body>
     </html>
