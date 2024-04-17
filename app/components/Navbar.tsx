@@ -171,7 +171,7 @@ function NavBar() {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    Idea Template
+                    <Link href="/idea-template">Idea Template</Link>
                   </Typography>
                 </MenuItem>
                 <MenuItem sx={{ py: "6px", px: "12px" }}>
@@ -296,7 +296,7 @@ function NavBar() {
                       fontSize="20px"
                       fontFamily="Varela"
                     >
-                      Idea Template
+                      <Link href="/idea-template">Idea Template</Link>
                     </Typography>
                   </MenuItem>
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
