@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { themes } from "./ThemesList";
+import Link from "next/link";
 
 function ThemeSection() {
   var settings = {
@@ -23,17 +25,17 @@ function ThemeSection() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -47,7 +49,7 @@ function ThemeSection() {
         <Typography
           variant="h1"
           sx={{
-            fontSize: {sm:"48px",xs:"38px"},
+            fontSize: { sm: "48px", xs: "38px" },
             fontFamily: "blanka",
             color: "#AAE6FF",
           }}
@@ -59,9 +61,9 @@ function ThemeSection() {
             alignSelf: "left",
             width: { sm: "100%", md: "100%" },
             mt: { xs: 5 },
-            mb:{xs:5},
+            mb: { xs: 5 },
             fontFamily: "Varela",
-            fontSize: {sm:"22px",xs:"16px"},
+            fontSize: { sm: "22px", xs: "16px" },
             color: "white",
           }}
         >
@@ -69,8 +71,10 @@ function ThemeSection() {
         </Typography>
       </Box>
       <div className="slider-container">
-          <Slider {...settings}>
+        <Slider {...settings}>
+          {themes.map((theme, index) => (
             <motion.div
+              key={index}
               className="box"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -78,253 +82,27 @@ function ThemeSection() {
               <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
                 <figure>
                   <img
-                    src="/images/health.png"
-                    alt="Shoes"
+                    src={theme.image}
+                    alt={theme.title}
                     className="rounded-xl"
-                    style={{ maxWidth: 390 }}
+                    style={{ maxWidth: 390 , height: 'auto' }}
                   />
                 </figure>
                 <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>HEALTH CARE</h1>
+                  <h1
+                    className="card-title"
+                    style={{ fontFamily: "popBold", fontSize: "24px" }}
+                  >
+                    {theme.title}
+                  </h1>
                   <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <Link href="/problem-statement" className="btn  btn-secondary">Know More</Link>
                   </div>
                 </div>
               </div>
             </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/fitness.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>FITNESS AND SPORTS</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/education.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>SMART EDUCATION</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/fintech.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>FINTECH</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/greentech.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>GREEN TECH</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/organization.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>ORGANISATIONAL INNOVATION</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/retail.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>SMART RETAIL</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/cybersecurity.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>CYBERSECURITY</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/image/agriculture.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>AGRICULTURE</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/bio.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>BIO-INFORMATICS</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src='/images/automation.png'
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>SMART AUTOMATION</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="box"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src="/images/innovation.png"
-                    alt="Shoes"
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1 className="card-title" style={{fontFamily: "popBold", fontSize:"24px"}}>OPEN INNOVATION</h1>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          
-          </Slider>
+          ))}
+        </Slider>
       </div>
       <Box
         sx={{
@@ -338,7 +116,7 @@ function ThemeSection() {
             width: { sm: "100%", md: "100%" },
             mt: { xs: 3 },
             fontFamily: "Varela",
-            fontSize: {sm:"22px",xs:"16px"},
+            fontSize: { sm: "22px", xs: "16px" },
             color: "white",
           }}
         >

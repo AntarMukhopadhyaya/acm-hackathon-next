@@ -1,0 +1,80 @@
+export const people = [
+  {
+    name: "Mr. Silajit Ghosh",
+    description: "Chairman, TEAM FUTURE",
+    role: "PATRON",
+    image: "/images/People/Mr. Silajit Ghosh.png",
+  },
+  {
+    name: "Dr. Mousumi Ghosh",
+    description: "Founder Director, TEAM FUTURE",
+    role: "PATRON",
+    image: "/images/People/Dr. Mousumi Ghosh.png",
+  },
+  {
+    name: "Dr. Aloke Kumar Ghosh",
+    description: "Executive Director, TEAM FUTURE",
+    role: "PATRON",
+    image: "/images/People/Dr. Aloke Kumar Ghosh.png",
+  },
+  {
+    name: "Dr. Anirban Chakrabarty",
+    description: "Principal, FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Dr. Anirban Chakrabarty.png",
+  },
+  {
+    name: "Prof.(Dr.) Sajal Kumar Giri",
+    description: "Registrar, FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Prof.(Dr.) Sajal Kumar Giri.png",
+  },
+  {
+    name: "Dr. Rupa Bhattacharyya",
+    description: "Research Committee Convenor, FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Dr. Rupa Bhattacharyya.png",
+  },
+  {
+    name: "Prof. (Dr.) Jaydip Nath",
+    description: "HOD CSE, FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Prof. (Dr.) Jaydip Nath.png",
+  },
+  {
+    name: "Prof. (Dr.) Satrughna Singha",
+    description: "HOD CSE(DS), FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Prof. (Dr.) Satrughna Singha.png",
+  },
+  {
+    name: "Prof. (Dr.) Poly Sil Sen",
+    description: "HOD IT, FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Prof. (Dr.) Poly Sil Sen.png",
+  },
+  {
+    name: "Prof. Ashoktaru Pal",
+    description: "HOD CA, FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Prof. Ashoktaru Pal.png",
+  },
+  {
+    name: "Dr. Anirban Mandal",
+    description: "HOD ECE, FIEM",
+    role: "ADVISOR",
+    image: "/images/People/Dr. Anirban Mandal.png",
+  },
+  {
+    name: "Prof. Abhishek Bal",
+    description: "CSE Dept, FIEM",
+    role: "MENTOR",
+    image: "/images/People/Prof. Abhishek Bal.png",
+  },
+  {
+    name: "Prof. Arindam Sinharay",
+    description: "IT Dept, FIEM",
+    role: "MENTOR",
+    image: "/images/People/Prof. Arindam Sinharay.png",
+  },
+];

@@ -193,7 +193,7 @@ function NavBar() {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    FAQ
+                   <Link href="/faq"> FAQ</Link>
                   </Typography>
                 </MenuItem>
               </Box>
@@ -277,6 +277,18 @@ function NavBar() {
                       <Link href="/guidelines">Guidelines</Link>
                     </Typography>
                   </MenuItem >
+
+                  <MenuItem onClick={() => scrollToSection("#")}  sx={{ py: "20px", px: "12px" }}>
+                <Typography
+                  color="white"
+                  fontSize="20px"
+                  fontFamily="Varela"
+                  variant="body2"
+
+                >
+                  <Link href="/rules-regulations">Rules and Regulations</Link>
+                </Typography>
+              </MenuItem>
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
@@ -306,7 +318,7 @@ function NavBar() {
                     fontSize="20px"
                     fontFamily="Varela"
                   >
-                    FAQ
+                    <Link href="/faq">FAQ</Link>
                   </Typography>
                 </MenuItem>
                 </Box>
@@ -389,7 +401,7 @@ function NavBar() {
                   fontFamily="Varela"
                   padding="5px"
                 >
-                  HACKSPIRE Rules and Regualation
+                  <Link href="/rules-regulations">HACKSPIRE Rules and Regulations</Link>
                 </Typography>
               </MenuItem>
             </Menu>

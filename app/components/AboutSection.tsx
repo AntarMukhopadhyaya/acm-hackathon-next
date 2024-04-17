@@ -102,7 +102,7 @@ function AboutSection() {
           sm="auto"
           sx={{
             width: { xs: "40%", sm: "40%" },
-            ml: { sm: 40 },
+            ml: { sm: 25 },
             display: { xs: "none", sm: "block" },
           }}
         >
@@ -124,7 +124,7 @@ function AboutSection() {
                 fontSize: { sm: "48px", xs: "38px" },
                 fontFamily: "blanka",
                 color: "#AAE6FF",
-                pl: { sm: 25 },
+                pl: { sm: 20 },
               }}
             >
               HACKSPIRE
@@ -162,7 +162,7 @@ function AboutSection() {
                 fontSize: { sm: "48px", xs: "38px" },
                 fontFamily: "blanka",
                 color: "#AAE6FF",
-                pl: { sm: 17 },
+                pl: { sm: 10 },
               }}
             >
               DATES&nbsp;
