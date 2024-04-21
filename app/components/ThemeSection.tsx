@@ -33,6 +33,7 @@ function ThemeSection() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
@@ -79,24 +80,38 @@ function ThemeSection() {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <div className="card w-96 bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] shadow-xl">
-                <figure>
-                  <img
-                    src={theme.image}
-                    alt={theme.title}
-                    className="rounded-xl"
-                    style={{ maxWidth: 390 , height: 'auto' }}
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h1
-                    className="card-title"
-                    style={{ fontFamily: "popBold", fontSize: "24px" }}
-                  >
-                    {theme.title}
-                  </h1>
-                  <div className="card-actions">
-                    <Link href="/problem-statement" className="btn  btn-secondary">Know More</Link>
+              <div className="group relative block  rounded-xl bg-black sm:max-lg:mx-3 lg:mx-7 lg:my-10">
+                <img
+                  alt={theme.title}
+                  src={theme.image}
+                  className="absolute inset-0 h-full w-full object-cover rounded-xl opacity-75 transition-opacity group-hover:opacity-50"
+                />
+
+                <div className="relative p-4 sm:p-6 lg:p-8 justify-center">
+                  <div className="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                      className="flex flex-wrap justify-center"
+                      style={{
+                        borderRadius: "999px",
+                        backgroundColor: "rgba(0, 112.5, 112.5, 0.3)",
+                        backdropFilter: "blur(5px)",
+                        height: "50px",
+                      }}
+                    >
+                      <p className="text-xl font-bold text-white text-center sm:text-2xl mt-2">
+                        {theme.title}
+                      </p>
+                    </div>
+                    <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 flex justify-center mt-2">
+                      <a
+                        className="group inline-block rounded-full bg-gradient-to-r from-[#01FFFF] to-[#FFFFFF] p-[2px] hover:text-[#0F337F] focus:outline-none focus:ring active:text-opacity-75"
+                        href="#"
+                      >
+                        <span className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent">
+                          Know more
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
