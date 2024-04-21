@@ -18,6 +18,7 @@ const page = () => {
                 description={person.description}
                 image={person.image}
                 role={person.role}
+                designation={person.designation}
               />
             ))}
         </div>
@@ -36,6 +37,7 @@ const page = () => {
                 description={person.description}
                 image={person.image}
                 role={person.role}
+                designation={person.designation}
               />
             ))}
         </div>
@@ -54,6 +56,7 @@ const page = () => {
                 description={person.description}
                 image={person.image}
                 role={person.role}
+                designation={person.designation}
               />
             ))}
         </div>

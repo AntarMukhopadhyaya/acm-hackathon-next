@@ -3,6 +3,7 @@ export const people = [
     name: "Hon’ble Mr. Silajit Ghosh",
     description: "Chairman, TEAM FUTURE",
     role: "PATRON",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Patrons/Mr. Silajit Ghosh_Patrons.png",
   },
@@ -10,6 +11,7 @@ export const people = [
     name: "Hon’ble Dr. Mousumi Ghosh",
     description: "Founder Director, TEAM FUTURE",
     role: "PATRON",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Patrons/Dr. Mousumi Ghosh_Patrons.png",
   },
@@ -17,6 +19,7 @@ export const people = [
     name: "Hon’ble Dr. Aloke Kumar Ghosh",
     description: "Executive Director, TEAM FUTURE",
     role: "PATRON",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Patrons/Dr. Aloke Kumar Ghosh_Patrons.png",
   },
@@ -24,6 +27,7 @@ export const people = [
     name: "Dr. Anirban Chakrabarty",
     description: "Principal, FIEM",
     role: "ADVISOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Dr. Anirban Chakrabarty.png",
   },
@@ -31,6 +35,7 @@ export const people = [
     name: "Prof.(Dr.) Sajal Kumar Giri",
     description: "Registrar, FIEM",
     role: "ADVISOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof.(Dr.) Sajal Kumar Giri.png",
   },
@@ -38,6 +43,7 @@ export const people = [
     name: "Prof. Tapas Roy",
     description: "Vice Principal, FIEM",
     role: "ADVISOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. Tapas Roy_Vice-Proncipal.png",
   },
@@ -45,6 +51,7 @@ export const people = [
     name: "Dr. Rupa Bhattacharyya",
     description: "Research Committee Convenor, FIEM",
     role: "ADVISOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Dr. Rupa Bhattacharyya.png",
   },
@@ -52,6 +59,7 @@ export const people = [
     name: "Prof. (Dr.) Jaydip Nath",
     description: "HOD CSE, FIEM",
     role: "ADVISOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. (Dr.) Jaydip Nath_HOD_CSE.png",
   },
@@ -59,12 +67,14 @@ export const people = [
     name: "Prof. (Dr.) Satrughna Singha",
     description: "HOD CSE(DS), FIEM",
     role: "ADVISOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. (Dr.) Satrughna Singha_HOD_CSE(DS).png",
   },
   {
     name: "Prof. (Dr.) Poly Sil Sen",
     description: "HOD IT, FIEM",
+    designation: "plz ignore this",
     role: "ADVISOR",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. (Dr.) Poly Sil Sen_HOD_IT.png",
@@ -72,6 +82,7 @@ export const people = [
   {
     name: "Prof. Ashoktaru Pal",
     description: "HOD CA, FIEM",
+    designation: "plz ignore this",
     role: "ADVISOR",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. Ashoktaru Pal_HOD_CA.png",
@@ -80,6 +91,7 @@ export const people = [
     name: "Dr. Anirban Mandal",
     description: "HOD ECE, FIEM",
     role: "ADVISOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Dr. Anirban Mandal_HOD_ECE.png",
   },
@@ -87,6 +99,7 @@ export const people = [
     name: "Prof. Abhishek Bal",
     description: "CSE Dept, FIEM",
     role: "MENTOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Mentors/Prof. Abhishek Bal.png",
   },
@@ -94,6 +107,7 @@ export const people = [
     name: "Prof. Arindam Sinharay",
     description: "IT Dept, FIEM",
     role: "MENTOR",
+    designation: "plz ignore this",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Mentors/Dr. Arindam Sinharay.png",
   },
