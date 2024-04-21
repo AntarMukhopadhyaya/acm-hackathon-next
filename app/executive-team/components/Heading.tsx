@@ -9,10 +9,18 @@ const Heading: React.FC<Props> = ({ title }) => {
     <>
       <div className="justify-center" style={{ fontFamily: "blanka" }}>
         <div className="gird grid-row-2 grid-flow-col justify-center text-center w-30">
-          <p className="font-bold text-5xl text-[#AAE6FF]"> RESPECTED</p>
-          <p className="font-bold lg:indent-[30%] text-5xl text-white">
-            {title}
-          </p>
+          {title != "CORE COMMITTEE" ? (
+            <div>
+              <p className="font-bold text-5xl text-[#AAE6FF]"> RESPECTED</p>
+              <p className="font-bold lg:indent-[30%] text-5xl text-white">
+                {title}
+              </p>
+            </div>
+          ) : (
+            <p className="font-bold lg:indent-[10%] text-6xl text-white">
+              {title}
+            </p>
+          )}
         </div>
       </div>
     </>
