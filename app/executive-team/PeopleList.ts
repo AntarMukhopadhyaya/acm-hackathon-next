@@ -24,7 +24,7 @@ export const people = [
       "/images/People/FIEM_HACKATHON_COMMITTEE/Patrons/Dr. Aloke Kumar Ghosh_Patrons.png",
   },
   {
-    name: "Dr. Anirban Chakrabarty",
+    name: "Prof.(Dr.) Anirban Chakrabarty",
     description: "Principal, FIEM",
     role: "ADVISOR",
     designation: "plz ignore this",
@@ -64,7 +64,7 @@ export const people = [
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. (Dr.) Jaydip Nath_HOD_CSE.png",
   },
   {
-    name: "Prof. (Dr.) Satrughna Singha",
+    name: "Dr. Satrughna Singha",
     description: "HOD CSE(DS), FIEM",
     role: "ADVISOR",
     designation: "plz ignore this",
@@ -72,7 +72,7 @@ export const people = [
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. (Dr.) Satrughna Singha_HOD_CSE(DS).png",
   },
   {
-    name: "Prof. (Dr.) Poly Sil Sen",
+    name: "Dr. Poly Sil Sen",
     description: "HOD IT, FIEM",
     designation: "plz ignore this",
     role: "ADVISOR",
@@ -114,7 +114,7 @@ export const people = [
   {
     name: "Prof. Prasanta Mazumder",
     description: "CSE Dept, FIEM",
-    role: "Core Committee",
+    role: "MENTOR",
     designation: "CC",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Prasanta Mazumder_CSE_CSE_CC.png",
@@ -389,6 +389,6 @@ export const people = [
     role: "Core Committee",
     designation: "Certificate & Memento",
     image:
-      "/images/People/FIEM_HACKATHON_COMMITTEE/Certificates & Memento Committee/Prof. Satyam Raha_CSE_CMC.png",
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Certificates & Memento Committee/Satyam Sir.jpg",
   },
 ];
