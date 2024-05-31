@@ -141,7 +141,7 @@ export default function Hero() {
         className="visible max-sm:invisible"
           item
           sx={{
-            pl: { sm: 45, xs: 90 },
+            pl: { sm: 45, xs: 50 },
             display: { xs: "none", sm: "block" },
             ml: { xs: 25 },
           }}
@@ -149,9 +149,9 @@ export default function Hero() {
           <img
             src="/images/hand.png"
             alt="hand"
-            style={{ width: "600px", height: "auto", cursor: "pointer" }}
+            style={{ width: "500px", height: "auto", cursor: "pointer" }}
           />
-          <Box sx={{ ml: { sm: 22 } }}>
+          <Box sx={{ ml:15 }}>
             <Timer />
           </Box>
         </Grid>

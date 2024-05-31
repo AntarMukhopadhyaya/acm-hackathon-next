@@ -135,7 +135,7 @@ function Home() {
           <img
             src="/images/Calender.png"
             alt="About us image"
-            style={{ width: '600px', height: 'auto', cursor: 'pointer' }}
+            style={{ width: '500px', height: 'auto', cursor: 'pointer' }}
           />
         </Grid>
         <Grid
@@ -483,9 +483,9 @@ function Home() {
           }}
         >
           <img
-            src="/images/Calender.png"
+            src="/images/Hero.png"
             alt="About us image"
-            style={{ width: '600px', height: 'auto', cursor: 'pointer' }}
+            style={{ width: '500px', height: 'auto', cursor: 'pointer' }}
           />
         </Grid>
       </Grid>

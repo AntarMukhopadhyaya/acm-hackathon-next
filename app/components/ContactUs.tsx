@@ -29,12 +29,12 @@ const ContactUs = () => {
       </button>
       <dialog id="my_modal_2" className="modal">
         <div className="modal-box bg-gradient-to-r from-cyan-500 to-blue-500">
-          <h3 className="font-bold text-5xl mb-10 text-center text-[#074081]">
+          <h3 className="font-bold text-3xl lg:text-5xl mb-10 text-center text-[#074081]" style={{fontFamily: "blanka",}}>
             CONTACT US
           </h3>
-          <p className="py-4 flex flex-row text-xl">
+          <p className="py-4 flex flex-row text-sm lg:text-xl">
             <FaLocationDot
-              className="mr-5 text-5xl"
+              className="mr-5 text-2xl lg:text-5xl"
               style={{
                 color: '#074081',
               }}
@@ -45,14 +45,14 @@ const ContactUs = () => {
           <div className="divider divider-warning"></div>
           <div className="flex flex-column">
             <IoMdCall
-              className="mr-5 mt-5 text-5xl"
+              className="mr-5 mt-5 text-2xl lg:text-5xl"
               style={{
                 color: '#074081',
               }}
             />
             <div className="">
-              <p className="py-4 text-xl">Abhishek Bal : (+91) 90382 81735</p>
-              <p className="py-4 -mt-6 text-xl">
+              <p className="py-4 text-sm lg:text-xl">Abhishek Bal : (+91) 90382 81735</p>
+              <p className="py-4 -mt-6 text-sm lg:text-xl">
                 Arindam Sinharay : (+91) 94330 64476
               </p>
             </div>
@@ -61,22 +61,22 @@ const ContactUs = () => {
           <div className="divider divider-warning"></div>
           <div className="flex flex-column">
             <MdEmail
-              className="mr-5 mt-1 text-5xl"
+              className="mr-5 mt-1 text-xl lg:text-5xl"
               style={{
                 color: '#074081',
               }}
             />
-            <p className="py-4 flex flex-row text-xl">fiem@teamfuture.in</p>
+            <p className="py-1 md:py-4 flex flex-row text-sm md:text-xl">fiem.acm.local.chapter@teamfuture.in</p>
           </div>
           <div className="divider divider-warning"></div>
           <div className="flex flex-column">
             <BsGlobe
-              className="mr-5 mt-1 text-5xl"
+              className="mr-5 mt-1 text-2xl lg:text-5xl"
               style={{
                 color: '#074081',
               }}
             />
-            <p className="py-4 flex flex-row text-xl">fiem@teamfuture.in</p>
+            <p className="py-1 md:py-4 flex flex-row text-sm lg:text-xl">futureeducation.in/fiem</p>
           </div>
         </div>
         <form method="dialog" className="modal-backdrop">
