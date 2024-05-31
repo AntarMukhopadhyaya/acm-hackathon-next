@@ -211,7 +211,7 @@ function Home() {
                   color: 'white',
                 }}
               >
-                Begins on 13th June,2024 and ends on 13th July,2024.
+                Begins on 15th June,2024 and ends on 31st July,2024.
               </Typography>
               <Typography
                 variant="h1"
@@ -232,7 +232,7 @@ function Home() {
                     color: 'white',
                   }}
                 >
-                  1st August,2024.
+                  26th August,2024.
                 </Typography>
               </Typography>
               <Typography
@@ -254,7 +254,7 @@ function Home() {
                     color: 'white',
                   }}
                 >
-                  13th August, 2024
+                  12th September, 2024
                 </Typography>
               </Typography>
               <Box

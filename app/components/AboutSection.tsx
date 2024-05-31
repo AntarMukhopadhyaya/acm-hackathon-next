@@ -1,4 +1,4 @@
-import { Box, alpha } from "@mui/material";
+import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
@@ -210,7 +210,7 @@ function AboutSection() {
                   color: "white",
                 }}
               >
-                13th June, 2024
+                15th June, 2024
               </Typography>
             </Typography>
             <Typography
@@ -232,7 +232,7 @@ function AboutSection() {
                   color: "white",
                 }}
               >
-                13th June, 2024
+                31st July, 2024
               </Typography>
             </Typography>
             <Typography
@@ -254,7 +254,7 @@ function AboutSection() {
                   color: "white",
                 }}
               >
-                13th June, 2024
+                12th September, 2024
               </Typography>
             </Typography>
           </Stack>
@@ -372,7 +372,7 @@ function AboutSection() {
                 color: "white",
               }}
             >
-              13th June, 2024
+              15th June, 2024
             </Typography>
           </Typography>
           <Typography
@@ -394,7 +394,7 @@ function AboutSection() {
                 color: "white",
               }}
             >
-              13th June, 2024
+              31st July, 2024
             </Typography>
           </Typography>
           <Typography
@@ -416,7 +416,7 @@ function AboutSection() {
                 color: "white",
               }}
             >
-              13th June, 2024
+              12th September, 2024
             </Typography>
           </Typography>
         </Stack>
