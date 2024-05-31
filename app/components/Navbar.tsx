@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { PaletteMode } from "@mui/material";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,7 +11,6 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
-import Paper from "@mui/material/Paper";
 
 import "./fonts/font.css";
 import Link from "next/link";
@@ -101,101 +99,104 @@ function NavBar() {
                     onClick={() => scrollToSection("hero")}
                     src="/images/logo.png"
                     style={logoStyle}
-                    alt="logo of sitemark"
+                    alt="logo"
                   />
                 </Link>
               </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <MenuItem sx={{ py: "6px", px: "12px" }}>
+                <MenuItem sx={{ py: "5px", px: "10px" }}>
                   <Button
                     onClick={handleClick}
                     aria-controls={openMenu ? "basic-menu" : undefined}
                     aria-haspopup="true"
                     aria-expanded={openMenu ? "true" : undefined}
-                  >
+                  ><Link href="/">
                     <Typography
                       variant="body2"
                       color="white"
-                      fontSize="20px"
+                      fontSize="18px"
                       fontFamily="Varela"
                     >
                       Discover HACKSPIRE
-                    </Typography>
+                    </Typography></Link>
                   </Button>
                 </MenuItem>
+                <Link href="/problem-statement">
                 <MenuItem
-                  sx={{ py: "6px", px: "12px" }}
+                  sx={{ py: "5px", px: "10px", my: "6px"}}
                 >
                   <Typography
                     variant="body2"
                     color="white"
-                    fontSize="20px"
+                    fontSize="18px"
                     fontFamily="Varela"
                   >
-                    <Link href="/problem-statement">Problem Statements</Link>
+                    Problem Statements
                   </Typography>
-                </MenuItem>
+                </MenuItem></Link>
+                <Link href="/executive-team">
                 <MenuItem
-                  onClick={() => scrollToSection("processflow")}
-                  sx={{ py: "6px", px: "12px" }}
+                  sx={{ py: "5px", px: "10px",my: "6px" }}
                 >
                   <Typography
                     variant="body2"
                     color="white"
-                    fontSize="20px"
+                    fontSize="18px"
                     fontFamily="Varela"
                   >
-                    <Link href="/executive-team">Executive Team</Link>
+                    Executive Team
                   </Typography>
-                </MenuItem>
+                </MenuItem></Link>
+                <Link href="/guidelines">
                 <MenuItem
-                  onClick={() => scrollToSection("pricing")}
-                  sx={{ py: "6px", px: "12px" }}
+                  sx={{ py: "5px", px: "10px",my: "6px" }}
                 >
                   <Typography
                     variant="body2"
                     color="white"
-                    fontSize="20px"
+                    fontSize="18px"
                     fontFamily="Varela"
                   >
-                    <Link href="/guidelines">Guidelines</Link>
+                    Guidelines
                   </Typography>
-                </MenuItem>
+                </MenuItem></Link>
+                <Link href="/idea-template">
                 <MenuItem
-                  onClick={() => scrollToSection("faq")}
-                  sx={{ py: "6px", px: "12px" }}
+                  sx={{ py: "5px", px: "10px",my: "6px" }}
                 >
                   <Typography
                     variant="body2"
                     color="white"
-                    fontSize="20px"
+                    fontSize="18px"
                     fontFamily="Varela"
                   >
-                    <Link href="/idea-template">Idea Template</Link>
+                    Idea Template
                   </Typography>
-                </MenuItem>
-                <MenuItem sx={{ py: "6px", px: "12px" }}>
+                </MenuItem></Link>
+                <Link href="/hackathon-details">
+                <MenuItem sx={{ py: "5px", px: "10px",my: "6px" }}>
                   <Typography
                     variant="body2"
                     color="white"
-                    fontSize="20px"
+                    fontSize="18px"
                     fontFamily="Varela"
                   >
-                    <Link href="/hackathon-details">Hackathon Details</Link>
+                    Hackathon Details
                   </Typography>
-                </MenuItem>
+                </MenuItem></Link>
+                <Link href="/faq">
                 <MenuItem
-                  sx={{ py: "6px", px: "12px" }}
+                  sx={{ py: "5px", px: "10px",my: "6px" }}
                 >
                   <Typography
                     variant="body2"
                     color="white"
-                    fontSize="20px"
+                    fontSize="18px"
                     fontFamily="Varela"
                   >
-                   <Link href="/faq"> FAQ</Link>
+                    FAQ
                   </Typography>
-                </MenuItem>
+                </MenuItem></Link>
               </Box>
             </Box>
             <Box

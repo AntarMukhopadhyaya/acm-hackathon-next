@@ -45,11 +45,12 @@ function AboutSection() {
         <Container
           sx={{
             mt: { sm: 10 },
-            display: "flex",
+           
             alignSelf: "center",
             alignContent: "middle ",
-            height: { sm: "680px" },
+            // height: { sm: "680px" },
             alignItems: "center",
+            textAlign:"center",
             pt: { xs: 5, sm: 10 },
             pb: { xs: 8, sm: 12 },
             // [theme.breakpoints.up("xs")]: {
@@ -60,16 +61,12 @@ function AboutSection() {
             //   boxShadow:`0 0 24px 12px ${alpha("#033363", 0.2)}`,
             // },
           }}
-        >
-          <video
-            id="bannerVideo"
-            autoPlay
-            muted
-            loop
-            style={{ marginTop: "10px" }}
-          >
-            <source src="/videos/acmvideo.mp4" type="video/mp4" />
-          </video>
+      >
+                <p
+        className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-sm font-extrabold text-transparent lg:text-3xl p-10"
+      >
+        Intro video Coming Soon........
+      </p>
         </Container>
       </Container>
       <Grid
@@ -81,6 +78,9 @@ function AboutSection() {
 
           pt: { xs: 0, sm: 15 },
           pl: { sm: 15 },
+          alignSelf: "center",
+          alignContent: "middle ",
+          alignItems: "center",
         }}
       >
         <Grid
@@ -94,7 +94,7 @@ function AboutSection() {
           <img
             src="/images/about1.png"
             alt="About us image"
-            style={{ width: "500px", height: "auto", cursor: "pointer" }}
+            style={{ width: "400px", height: "auto", cursor: "pointer" }}
           />
         </Grid>
         <Grid
