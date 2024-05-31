@@ -91,7 +91,7 @@ export default function Hero() {
                   1000,
                   "Mark the Date",
                   1000,
-                  "15.08.2024",
+                  "12.09.2024",
                   1000,
                 ]}
                 speed={50}
