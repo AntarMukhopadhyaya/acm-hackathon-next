@@ -17,9 +17,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              Any student currently enrolled in a College or University pursuing
-              programs such as BE/B.Tech/Diploma, MCA/BCA, ME/M.Tech,
-              B.Sc./M.Sc., or Polytechnic, as well as BBA/MBA students.
+            Any student currently enrolled in a College or University pursuing programs such as BE/B.Tech/Diploma, MCA/BCA, ME/M.Tech, B.Sc./M.Sc., or Polytechnic, as well as BBA/MBA students.
             </p>
           </div>
         </div>
@@ -30,10 +28,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              Mentors can be selected from either the Industry or Academia,
-              based on their relevant experience and qualifications. It's
-              preferable to choose mentors from within the same institute for
-              better alignment and understanding.
+            Mentors can be selected from either the Industry or Academia, based on their relevant experience and qualifications. It's preferable to choose mentors from within the same institute for better alignment and understanding.
             </p>
           </div>
         </div>
@@ -56,9 +51,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              The Mentor or Team Leader should register the team at DEVFOLIO
-              between June 1st, 2024, and June 20th, 2024. No fees are required
-              for the Primary Registration and Idea Submission round.
+              The Mentor or Team Leader should register the team at <span className="font-bold text-white"> DEVFOLIO</span> between June 25th, 2024, and July 31st, 2024. No fees are required for the Registration and Idea Submission round.
             </p>
           </div>
         </div>
@@ -69,11 +62,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              After team formation, teams should choose a theme and problem
-              statement from the predefined list. Alternatively, they can
-              innovate under any theme through the "OPEN INNOVATION" category. A
-              signed consent letter from the Head of the Institution is
-              mandatory.
+            After team formation, teams should choose a theme and problem statement from the predefined list. Alternatively, they can innovate under any theme through the "OPEN INNOVATION" category. A signed consent letter from the Head of the Institution is mandatory.
             </p>
           </div>
         </div>
@@ -84,9 +73,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              Participants should create a PPT based on the Idea Template
-              provided on the HackSpire portal and submit a PDF during the Idea
-              Submission Round.
+            Participants should create a PPT based on the Idea Template provided on the HackSpire portal and submit a PDF during the Idea Submission Round.
             </p>
           </div>
         </div>
@@ -97,10 +84,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              The HackSpire Executive team will review all ideas, and upon
-              approval, the Mentor will receive confirmation for the Grand
-              Finale registration. Any discrepancies will be communicated via
-              email or mobile.
+            The HackSpire Executive team will review all ideas, and upon approval, the Mentor will receive confirmation for the Grand Finale registration. Any discrepancies will be communicated via email or mobile.
             </p>
           </div>
         </div>
@@ -111,9 +95,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              Upon idea selection, the Mentor will receive a confirmation email
-              for the Grand Finale registration. The team must complete the
-              registration within the given deadline to avoid disqualification.
+            Upon idea selection, the Mentor will receive a confirmation email for the Grand Finale registration. The team must complete the registration within the given deadline to avoid disqualification.
             </p>
           </div>
         </div>
@@ -124,9 +106,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              The Grand Finale of HackSpire 2024 will be held offline at the
-              Future Institute of Engineering and Management, Sonarpur, Kolkata,
-              West Bengal.
+            The Grand Finale of HackSpire 2024 will be held offline at the Future Institute of Engineering and Management, Sonarpur, Kolkata, West Bengal.
             </p>
           </div>
         </div>
@@ -137,10 +117,7 @@ const FAQ= () => {
           </div>
           <div className="collapse-content">
             <p>
-              The full team, along with the Mentor, must be physically present
-              throughout the hackathon duration (8 am to 7 pm). Solutions
-              presented during the Grand Finale should be original and
-              non-plagiarized.
+            The full team, along with the Mentor, must be physically present throughout the hackathon duration (8 am to 8 pm). Solutions presented during the Grand Finale should be original and non-plagiarized.
             </p>
           </div>
         </div>

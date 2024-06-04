@@ -62,7 +62,7 @@ const page = () => {
         </div>
       </div>
 
-      <Heading title="CORE COMMITTEE" />
+      <Heading title="COMMITTEE MEMBERS" />
 
       <div className="flex text-center justify-center align-items-center">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-20 p-8 md:p-12 lg:px-16 lg:py-24 lg:mt-10 ">

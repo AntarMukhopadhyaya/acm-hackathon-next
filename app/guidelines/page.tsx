@@ -30,6 +30,7 @@ const Guidelines = () => {
               <li>MCA/BCA</li>
               <li>ME/ M. Tech.</li>
               <li>B.Sc./ M.Sc.</li>
+              <li>BBA/ MBA</li>
             </ul>
           </article>
 
@@ -42,11 +43,9 @@ const Guidelines = () => {
             </h2>
 
             <p className="mt-2 text-md/relaxed text-gray-400">
-              A mentor can be selected from either the Industry or Academia,
-              possessing relevant experience and qualifications to effectively
-              guide a team. Ideally, mentors should be chosen from within the
-              same institute as the students for better alignment and
-              understanding of institutional dynamics.
+            A mentor can be selected from either the Industry or Academia, possessing relevant experience and qualifications to effectively guide a team. Ideally, mentors should be chosen from within the same institute as the students for better alignment and understanding of institutional dynamics.<br />
+
+If Mentor or Team Members are from different educational institutions, in that case, approval must be sought from the respective heads of all institutes involved, using the specified format. These approvals should then be consolidated into a single PDF document and uploaded during the registration process.
             </p>
           </article>
 
@@ -59,13 +58,7 @@ const Guidelines = () => {
             </h2>
 
             <p className="mt-2 text-md/relaxed text-gray-400">
-              A team must be formed, consisting of 6 members, with one Team
-              Leader
-              <span className="font-bold text-white">
-                {" "}
-                ( 1 female member per team is mandatory )
-              </span>
-              . Each team must have a unique Team Name.{" "}
+            A team must be formed; consisting of 6 members with one Team Leader Each team must have a unique Team Name.
             </p>
           </article>
 
@@ -84,7 +77,7 @@ const Guidelines = () => {
               <li>
                 Registration for HackSpire 2024 will be open from{" "}
                 <span className="font-bold text-white">
-                  1st June 2024 to 20th June 2024.
+                25th June 2024 to 31st July 2024
                 </span>
                 .
               </li>
@@ -92,25 +85,16 @@ const Guidelines = () => {
                 <span className="font-bold text-white">
                   No fees is required
                 </span>{" "}
-                for the Primary Registration and Idea Submission round.
+                for the Registration and Idea Submission round.
               </li>
               <li>
                 <p>
-                After Team formation pertaining to the eligibility criteria
-                mentioned above, teams should choose a theme and a matching
-                problem statement from the predefined Problem Statement List.
-                Students may also choose to innovate on their own under any of
-                the given themes through “OPEN INNOVATION” category. In that
-                case, the problem statement should be relevant to the theme and
-                clearly defined.
+                After Team formation pertaining to the eligibility criteria mentioned above, teams should choose a theme and a matching problem statement from the predefined Problem Statement List. Students may also choose to innovate on their own under any of the given themes through the “OPEN INNOVATION” category. In that case, the problem statement should be relevant to the theme and clearly defined.
                 </p>
               </li>
               <li>
                 <p>
-                After Problem Statement selection, participants should create a
-                PPT based on the Idea Template available on the HackSpire
-                portal. A PDF of the same should be submitted during the Idea
-                Submission Round.
+                After Problem Statement selection, participants should create a PPT based on the Idea Template available on the HackSpire portal. A PDF of the same should be submitted during the Idea Submission Round.
                 </p>
         
               </li>
@@ -119,27 +103,9 @@ const Guidelines = () => {
                   A signed consent letter, endorsed by the Head of the
                   Institution, is mandatory.
                 </span>
+                <p>For cases involving multiple institutions, consent letters are necessary from each institution, all of which should be consolidated into a single document. This document, along with the idea template in PDF format, must be submitted according to the provided guidelines.</p>
               </li>
             </ul>
-          </article>
-
-          <article
-            className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
-            style={{ fontFamily: "Varela" }}
-          >
-            <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
-              PRIMARY REGISTRATION:
-            </h2>
-
-            <p className="mt-2 text-md/relaxed text-gray-400">
-              A team must be formed, consisting of 6 members, with one Team
-              Leader
-              <span className="font-bold text-white">
-                {" "}
-                ( 1 female member per team is mandatory )
-              </span>
-              . Each team must have a unique Team Name.{" "}
-            </p>
           </article>
 
           <article
@@ -151,22 +117,10 @@ const Guidelines = () => {
             </h2>
             <ul className="mt-2 ml-4 text-md/relaxed text-gray-400 list-disc">
               <li>
-                After Idea Submission, the HackSpire Executive team will review
-                all details and all ideas will be evaluated. Once complete,
-                final approval will be sent to the Mentor via email. Any
-                discrepancies will prompt contact with the Mentor via email or
-                mobile.
+              After Idea Submission, the HackSpire Executive team will review all details and all ideas will be evaluated. Once complete, final approval will be sent to the Mentor/Team leader via email. Any discrepancies will prompt contact with the Mentor/Team leader via email or mobile.
               </li>
               <li>
-                Once an Idea is selected, the corresponding Team Mentor will
-                receive a confirmation email for the Grand Finale of HackSpire.
-                The Team should complete the Grand Finale Registration within
-                the stipulated deadline. Failure to do so will result in
-                disqualification.
-              </li>
-              <li>
-                Teams registering for the Grand Finale shall pay a nominal fee
-                for food and accommodation on the day of the Grand Finale.
+              Once an Idea is selected, the corresponding Team Mentor will receive a confirmation email for the Grand Finale of HackSpire. The Team should complete the Grand Finale Registration within the stipulated deadline. Failure to do so will result in disqualification.
               </li>
             </ul>
           </article>
@@ -183,7 +137,7 @@ const Guidelines = () => {
               The Grand Finale of HackSpire 2024 will be in <span className="font-bold text-white">OFFLINE MODE</span>, held at Future Institute of Engineering and Management, Sonarpur, Kolkata, West Bengal.
               </li>
               <li>
-              Full team, along with Mentor, should be physically present throughout the duration of the hackathon, ie. from 8 am to 7 pm.
+              Full team, along with Mentor, should be physically present throughout the duration of the hackathon, ie. from 8 am to 8 pm.
               </li>
               <li>
               Solutions of problem statement in the Grand Finale should be original and non-plagiarized.

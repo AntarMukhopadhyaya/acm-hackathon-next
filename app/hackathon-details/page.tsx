@@ -211,7 +211,7 @@ function Home() {
                   color: 'white',
                 }}
               >
-                Begins on 15th June,2024 and ends on 31st July,2024.
+                Begins on 25th June,2024 and ends on 31st July,2024.
               </Typography>
               <Typography
                 variant="h1"

@@ -96,7 +96,7 @@ export const people = [
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Dr. Anirban Mandal_HOD_ECE.png",
   },
   {
-    name: "Prof. Abhishek Bal",
+    name: "Dr. Abhishek Bal",
     description: "CSE Dept, FIEM",
     role: "MENTOR",
     designation: "plz ignore this",
@@ -123,7 +123,7 @@ export const people = [
     name: "Prof. Suprativ Saha",
     description: "CSE (DS) Dept, FIEM",
     role: "Core Committee",
-    designation: "CC",
+    designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Suprativ Saha_CSE(DS)_CC.png",
   },
@@ -131,7 +131,7 @@ export const people = [
     name: "Prof. Subhasis Mitra",
     description: "IT Dept, FIEM",
     role: "Core Committee",
-    designation: "CC",
+    designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Subhasis Mitra_IT_CC.png",
   },
@@ -139,7 +139,7 @@ export const people = [
     name: "Dr. Monalisha Ghosh",
     description: "CA Dept, FIEM",
     role: "Core Committee",
-    designation: "CC",
+    designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Dr. Monalisha Ghosh_CA_CC.png",
   },
@@ -147,7 +147,7 @@ export const people = [
     name: "Prof. Abhijit Kumar Pal",
     description: "ECE Dept, FIEM",
     role: "Core Committee",
-    designation: "CC",
+    designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Abhijit Kumar Pal_ECE_CC.png",
   },
@@ -155,7 +155,7 @@ export const people = [
     name: "Mr. Subhayu Dam",
     description: "Library, FIEM",
     role: "Core Committee",
-    designation: "CC",
+    designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Mr. Subhau Dan_library_CC.png",
   },
@@ -163,7 +163,7 @@ export const people = [
     name: "Prof. Tamal Dutta",
     description: "EE Dept, FIEM",
     role: "Core Committee",
-    designation: "CC",
+    designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Tamal Dutta_EE_CC.png",
   },
@@ -171,7 +171,7 @@ export const people = [
     name: "Prof. Pallab Basu Mallik",
     description: "ME Dept, FIEM",
     role: "Core Committee",
-    designation: "CC",
+    designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Pallab Basu Mallik_ME_CC.png",
   },
@@ -235,7 +235,7 @@ export const people = [
     name: "Prof. Anupam Patra",
     description: "ECE Dept, FIEM",
     role: "Core Committee",
-    designation: "Technical Program Design",
+    designation: "Technical Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Anupam Patra_ECE_TPD_Coordinator.png",
   },
@@ -243,7 +243,7 @@ export const people = [
     name: "Dr. Ratul Chowdhury",
     description: "CSE Dept, FIEM",
     role: "Core Committee",
-    designation: "Technical Program Design",
+    designation: "Technical Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Ratul Chowdhury_CSE_TPD_Coordinator.png",
   },
@@ -251,7 +251,7 @@ export const people = [
     name: "Prof. Sabari Kumar",
     description: "CSE(DS) Dept, FIEM",
     role: "Core Committee",
-    designation: "Technical Program Design",
+    designation: "Technical Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Sabari Kumar_CSE(DS)_TPD.png",
   },
@@ -259,7 +259,7 @@ export const people = [
     name: "Prof. Manjushree Chakraborty",
     description: "CSE Dept, FIEM",
     role: "Core Committee",
-    designation: "Technical Program Design",
+    designation: "Technical Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Manjushree Chakraborty_CSE_TPD.png",
   },
@@ -275,7 +275,7 @@ export const people = [
     name: "Dr. Dipayan Nath",
     description: "EE Dept, FIEM",
     role: "Core Committee",
-    designation: "Technical Program Design",
+    designation: "Technical Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Dr. Dipayan Nath_EE_TPD.png",
   },
