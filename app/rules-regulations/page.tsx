@@ -29,9 +29,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-start md:text-end mb-10">
                 <div className="text-lg font-black">1</div>
-                Each team must consist of a minimum of 3 students and a maximum
-                of 6 student members, with one mandatory mentor from either the
-                industry or academic institution.
+                Each team must consist of a minimum of 3 students and a maximum of 6 student members, with one mandatory mentor from either the industry or academic institution.
               </div>
               <hr />
             </li>
@@ -53,9 +51,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-end mb-10">
                 <div className="text-lg font-black">2</div>
-                Every participant must adhere to the HackSpire 2024 guidelines,
-                demonstrating respect and courtesy towards all team members,
-                competitors, judges, coaches, volunteers, and others involved.
+                Every participant must adhere to the HackSpire 2024 guidelines, demonstrating respect and courtesy towards all team members, competitors, judges, coaches, volunteers, and others involved.
               </div>
               <hr />
             </li>
@@ -77,8 +73,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-start md:text-end mb-10">
                 <div className="text-lg font-black">3</div>
-                The prizes awarded to a specific team are to be distributed
-                among all members of the team.
+                The prizes awarded to a specific team are to be distributed among all members of the team.
               </div>
               <hr />
             </li>
@@ -122,8 +117,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-start md:text-end mb-10">
                 <div className="text-lg font-black">5</div>
-                Team members may seek advice and support from organizers,
-                volunteers, sponsors, and other available resources.
+                Team members may seek advice and support from organizers, volunteers, sponsors, and other available resources.
               </div>
               <hr />
             </li>
@@ -150,17 +144,13 @@ const rulesRegulation = () => {
                 <ol className="list-decimal ml-10">
                   <li>Each team will receive two judgment sessions.</li>
                   <li>
-                    The first judgment session will commence 2 hours after the
-                    event inauguration, with the final evaluation occurring 3
-                    hours after the initial assessment.
+                  The first judgment session will commence 2 hours after the event inauguration, with the final evaluation occurring 3 hours after the initial assessment.
                   </li>
                   <li>
-                    Partial hardware and software design beforehand is
-                    permitted.
+                  Partial hardware and software design beforehand is permitted.
                   </li>
                   <li>
-                    The ultimate decision regarding the project rests solely on
-                    the discretion of the jury or panel members.
+                  The ultimate decision regarding the project rests solely on the discretion of the jury or panel members.
                   </li>
                 </ol>
               </div>
@@ -184,10 +174,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-start md:text-end mb-10">
                 <div className="text-lg font-black">7</div>
-                Teams are permitted to work on ideas that have previously been
-                implemented. If multiple teams choose to work on a common idea,
-                they should be allowed to do so and will be evaluated based on
-                the quality of their hack.
+                Teams are permitted to work on ideas that have previously been implemented. If multiple teams choose to work on a common idea, they should be allowed to do so and will be evaluated based on the quality of their hack.
               </div>
               <hr />
             </li>
@@ -209,10 +196,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-end mb-10">
                 <div className="text-lg font-black">8</div>
-                Teams are allowed to utilize libraries, frameworks, or
-                open-source code in their projects. However, the final version
-                of the product must not infringe upon any existing intellectual
-                property rights (IPR).
+                Teams are allowed to utilize libraries, frameworks, or open-source code in their projects. However, the final version of the product must not infringe upon any existing intellectual property rights (IPR).
               </div>
               <hr />
             </li>
@@ -234,9 +218,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-start md:text-end mb-10">
                 <div className="text-lg font-black">9</div>
-                Teams are required to stop hacking once the designated time is
-                up. No further changes or addition of new features are permitted
-                after this deadline.
+                Teams are required to stop hacking once the designated time is up. No further changes or addition of new features are permitted after this deadline.
               </div>
               <hr />
             </li>
@@ -258,11 +240,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-end mb-10">
                 <div className="text-lg font-black">10</div>
-                At the discretion of the organizers, teams may be disqualified
-                from the competition for reasons including but not limited to
-                violating the HackSpire Rules & Regulations, exhibiting behavior
-                contrary to the code of conduct, and engaging in unsportsmanlike
-                conduct.
+                At the discretion of the organizers, teams may be disqualified from the competition for reasons including but not limited to violating the HackSpire Rules & Regulations, exhibiting behavior contrary to the code of conduct, and engaging in unsportsmanlike conduct.
               </div>
             </li>
           </ul>
