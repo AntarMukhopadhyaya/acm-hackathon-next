@@ -109,7 +109,7 @@ export const people = [
     role: "ADVISOR",
     designation: "plz ignore this",
     image:
-      "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. Krishnendu Mandal_HOD_ME.png",
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. Krishnendu Mandal_HOD_ME.jpg",
   },
   {
     name: "Dr. Abhishek Bal",
