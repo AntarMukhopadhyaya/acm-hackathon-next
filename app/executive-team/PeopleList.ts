@@ -96,6 +96,22 @@ export const people = [
       "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Dr. Anirban Mandal_HOD_ECE.png",
   },
   {
+    name: "Prof. Avijit Saha",
+    description: "HOD EE, FIEM",
+    role: "ADVISOR",
+    designation: "plz ignore this",
+    image:
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. Avijit Saha_HOD_EE.png",
+  },
+  {
+    name: "Prof. Krishnendu Mandal",
+    description: "HOD ME, FIEM",
+    role: "ADVISOR",
+    designation: "plz ignore this",
+    image:
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Advisors/Prof. Krishnendu Mandal_HOD_ME.png",
+  },
+  {
     name: "Dr. Abhishek Bal",
     description: "CSE Dept, FIEM",
     role: "MENTOR",
@@ -177,7 +193,7 @@ export const people = [
   },
   {
     name: "Mr. Tapas Banerjee",
-    description: "CSE Dept, FIEM",
+    description: "System Dept, FIEM",
     role: "Core Committee",
     designation: "Graphics, Website, Media Publication",
     image:
@@ -263,14 +279,14 @@ export const people = [
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Manjushree Chakraborty_CSE_TPD.png",
   },
-  // {
-  //   name: "Prof. Kushal Kumar Roy",
-  //   description: "CA Dept, FIEM",
-  //   role: "Core Committee",
-  //   designation: "Technical Program Design",
-  //   image:
-  //     "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Kushal Kumar Roy_CA_TPD.png",
-  // },
+  {
+    name: "Prof. Kushal Kumar Roy",
+    description: "CA Dept, FIEM",
+    role: "Core Committee",
+    designation: "Technical Program Design",
+    image:
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Kushal Kumar Roy_CA_TPD.jpeg",
+  },
   {
     name: "Dr. Dipayan Nath",
     description: "EE Dept, FIEM",
@@ -303,14 +319,14 @@ export const people = [
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Event Coordinator Committee/Prof. Madhurima Das_CSE(DS)_TECC.png",
   },
-  // {
-  //   name: "Prof. Sumedha Das Gupta",
-  //   description: "ECE Dept, FIEM",
-  //   role: "Core Committee",
-  //   designation: "Technical Event Coordinator",
-  //   image:
-  //     "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Event Coordinator Committee/Prof. Sumedha Das Gupta_ECE_TECC.png",
-  // },
+  {
+    name: "Prof. Sumedha Das Gupta",
+    description: "ECE Dept, FIEM",
+    role: "Core Committee",
+    designation: "Technical Event Coordinator",
+    image:
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Event Coordinator Committee/Prof. Sumedha Das Gupta_ECE_TECC.jpg",
+  },
   {
     name: "Prof. Debayan Bhattacharya",
     description: "EE Dept, FIEM",
@@ -319,14 +335,14 @@ export const people = [
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Event Coordinator Committee/Prof. Debayan Bhattacharya_EE_TECC.png",
   },
-  // {
-  //   name: "Prof. Chanchal Ghosh",
-  //   description: "CSE Dept, FIEM",
-  //   role: "Core Committee",
-  //   designation: "Infrastructure & Logistics",
-  //   image:
-  //     "/images/People/FIEM_HACKATHON_COMMITTEE/Infrastructure & Logistics Committee/Prof. Chanchal Ghosh_CSE_ILC.png",
-  // },
+  {
+    name: "Prof. Chanchal Ghosh",
+    description: "CSE Dept, FIEM",
+    role: "Core Committee",
+    designation: "Infrastructure & Logistics",
+    image:
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Infrastructure & Logistics Committee/Prof. Chanchal Ghosh_CSE_ILC.jpg",
+  },
   {
     name: "Prof. Prosenjit Mukherjee",
     description: "IT Dept, FIEM",
