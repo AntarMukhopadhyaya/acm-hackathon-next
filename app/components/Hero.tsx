@@ -1,4 +1,5 @@
 "use client";
+import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -9,13 +10,26 @@ import "./fonts/font.css";
 import Timer from "./Timer";
 
 export default function Hero() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
-    <Stack id="hero" alignContent="center" sx={{pb:{xs:20},pt:{xs:10}}}>
+    <Stack
+      id="hero"
+      alignContent="center"
+      sx={{ pb: { xs: 20 }, pt: { xs: 10 } }}
+    >
       <Grid
-      className="sm:max-lg:flex sm:max-lg:justify-center sm:max-lg:text-center"
+        className="sm:max-lg:flex sm:max-lg:justify-center sm:max-lg:text-center"
         container
         spacing={1}
-
         sx={(theme) => ({
           width: "100%",
           [theme.breakpoints.down("xs")]: {
@@ -25,13 +39,13 @@ export default function Hero() {
           },
 
           pt: { sm: 15 },
-          pl: { sm: 15,},
+          pl: { sm: 15 },
         })}
       >
         <Grid
           item
           sm="auto"
-          sx={{ width: { xs: "80%", sm: "40%" }, mt: { xs: 10, sm: 8 },}}
+          sx={{ width: { xs: "80%", sm: "40%" }, mt: { xs: 10, sm: 8 } }}
         >
           <Stack spacing={2}>
             <img
@@ -79,7 +93,7 @@ export default function Hero() {
               sx={{
                 fontSize: "clamp(1rem, 2vw, 2rem)",
                 fontFamily: "blanka",
-                color: "#1DD8FE"
+                color: "#1DD8FE",
               }}
             >
               <TypeAnimation
@@ -99,7 +113,7 @@ export default function Hero() {
               />
             </Typography>
             <img
-            className="sm:max-lg:self-center"
+              className="sm:max-lg:self-center"
               src="/images/fiemacm.png"
               alt="logo of HACKSPIRE"
               style={{ width: "200px", height: "auto", cursor: "pointer" }}
@@ -122,11 +136,13 @@ export default function Hero() {
                       ariaLabel: 'Enter your email address',
                     }}
                   /> */}
-              <Button variant="contained" color="primary">
-                <Typography fontFamily="Varela">
-                  Submit using DEVFOLIO
-                </Typography>
-              </Button>
+
+              <div
+                className="apply-button"
+                data-hackathon-slug="hackspire"
+                data-button-theme="light"
+                style={{height: "44px", width: "312px"}}
+              ></div>
             </Stack>
             {/* <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
                   By clicking &quot;Start now&quot; you agree to our&nbsp;
@@ -138,7 +154,7 @@ export default function Hero() {
           </Stack>
         </Grid>
         <Grid
-        className="visible max-sm:invisible"
+          className="visible max-sm:invisible"
           item
           sx={{
             pl: { sm: 45, xs: 50 },
@@ -151,7 +167,7 @@ export default function Hero() {
             alt="hand"
             style={{ width: "500px", height: "auto", cursor: "pointer" }}
           />
-          <Box sx={{ ml:15 }}>
+          <Box sx={{ ml: 15 }}>
             <Timer />
           </Box>
         </Grid>
