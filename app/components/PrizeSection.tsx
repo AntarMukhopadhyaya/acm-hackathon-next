@@ -77,7 +77,7 @@ const PrizeSection = () => {
           </Typography>
           </Typography>
         </Box>
-        <Image  src="/images/Prize.png" className="mx-auto" width={1000} height={100} alt="Prizes"/>
+        <Image  src="/images/Prize.png" className="mx-auto my-20" width={1000} height={100} alt="Prizes"/>
       </Container>
     );
 }
