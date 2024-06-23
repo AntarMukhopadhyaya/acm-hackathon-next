@@ -7,16 +7,17 @@ export const people = [
     image: "/images/People/Student_Body/ID PIC - SRIJANI DATTA.jpg",
   },
   {
-    name: "Ritwika Dutta",
+    name: "Kironmoy Mandal",
     description: "Vice Chair",
     role: "CC Member",
     designation: "plz ignore this",
     image:
-      "/images/People/Student_Body/ca81a579-f894-4326-8ed9-78631536e5ac - RITWIKA DUTTA.jpeg",
+      "/images/People/Student_Body/IMG_20231217_111104_305~2 - KIRONMOY MANDAL.jpg",
   },
+
   {
     name: "Debmalya Dash",
-    description: "Tech Head",
+    description: "Web Master",
     role: "CC Member",
     designation: "plz ignore this",
     image:
@@ -24,41 +25,48 @@ export const people = [
   },
   {
     name: "Asim Mandal",
-    description: "007",
+    description: "Treasurer",
     role: "CC Member",
     designation: "plz ignore this",
-    image: "/images/People/Student_Body/IMG_20231224_202229 - ASIM MANDAL.jpg",
+    image: "/images/People/Student_Body/Asim 3.jpg",
   },
   {
-    name: "Agnishwar Banerjee",
-    description: "Kobi",
+    name: "Ritwika Dutta",
+    description: "Secretary",
     role: "CC Member",
     designation: "plz ignore this",
     image:
-      "/images/People/Student_Body/LRM_20231113_162222 - Agniswar Banerjee.jpg",
+      "/images/People/Student_Body/ca81a579-f894-4326-8ed9-78631536e5ac - RITWIKA DUTTA.jpeg",
+  },
+  {
+    name: "Akash Sen",
+    description: "Coordinator",
+    role: "CC Member",
+    designation: "plz ignore this",
+    image:
+      "/images/People/Student_Body/20220927102738_IMG_2175 - Akash Sen.jpg",
   },
   {
     name: "Dripto Bhattacharyya",
-    description: "",
+    description: "Coordinator",
     role: "CC Member",
     designation: "plz ignore this",
     image: "/images/People/Student_Body/Dripto.jpg",
   },
+
   {
-    name: "Akash Sen",
-    description: "",
+    name: "Agnishwar Banerjee",
+    description: "Coordinator",
     role: "CC Member",
     designation: "plz ignore this",
-    image:
-      "/images/People/Student_Body/20220927102738_IMG_2175 - Akash Sen.jpg",
+    image: "/images/People/Student_Body/Agnishwar 2.jpg",
   },
   {
     name: "Subho Hazra",
-    description: "",
+    description: "Coordinator",
     role: "CC Member",
     designation: "plz ignore this",
-    image:
-      "/images/People/Student_Body/20220927102738_IMG_2175 - Akash Sen.jpg",
+    image: "/images/People/Student_Body/Subho.jpg",
   },
   {
     name: "Rika Nandy",
@@ -77,34 +85,24 @@ export const people = [
   },
   {
     name: "Chayan Jana",
-    description: "Something",
-    role: "CC Member",
-    designation: "plz ignore this",
-    image: "/images/People/Student_Body/my pic - Chayan Jana.jpg",
-  },
-
-  {
-    name: "Kironmoy Mandal",
     description: "",
     role: "CC Member",
     designation: "plz ignore this",
-    image:
-      "/images/People/Student_Body/IMG_20231217_111104_305~2 - KIRONMOY MANDAL.jpg",
+    image: "/images/People/Student_Body/Chayan 2.jpg",
   },
+
   {
     name: "Ananya",
     description: "",
     role: "CC Member",
     designation: "plz ignore this",
-    image:
-      "/images/People/Student_Body/IMG_20231217_111104_305~2 - KIRONMOY MANDAL.jpg",
+    image: "/images/People/Student_Body/Ananya.jpg",
   },
   {
     name: "Satwik Dey",
     description: "",
     role: "CC Member",
     designation: "plz ignore this",
-    image:
-      "/images/People/Student_Body/profile - SATWIK DEY.jpg",
+    image: "/images/People/Student_Body/profile - SATWIK DEY.jpg",
   },
 ];
