@@ -110,93 +110,103 @@ function NavBar() {
                     aria-controls={openMenu ? "basic-menu" : undefined}
                     aria-haspopup="true"
                     aria-expanded={openMenu ? "true" : undefined}
-                  ><Link href="/">
+                  >
+                    <Link href="/">
+                      <Typography
+                        variant="body2"
+                        color="white"
+                        fontSize="18px"
+                        fontFamily="Varela"
+                      >
+                        Discover HACKSPIRE
+                      </Typography>
+                    </Link>
+                  </Button>
+                </MenuItem>
+                <Link href="/problem-statement">
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
                     <Typography
                       variant="body2"
                       color="white"
                       fontSize="18px"
                       fontFamily="Varela"
                     >
-                      Discover HACKSPIRE
-                    </Typography></Link>
-                  </Button>
-                </MenuItem>
-                <Link href="/problem-statement">
-                <MenuItem
-                  sx={{ py: "5px", px: "10px", my: "6px"}}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="18px"
-                    fontFamily="Varela"
-                  >
-                    Problem Statements
-                  </Typography>
-                </MenuItem></Link>
+                      Problem Statements
+                    </Typography>
+                  </MenuItem>
+                </Link>
                 <Link href="/executive-team">
-                <MenuItem
-                  sx={{ py: "5px", px: "10px",my: "6px" }}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="18px"
-                    fontFamily="Varela"
-                  >
-                    Executive Team
-                  </Typography>
-                </MenuItem></Link>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Executive Team
+                    </Typography>
+                  </MenuItem>
+                </Link>
+                <Link href="/student-body">
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Student Body
+                    </Typography>
+                  </MenuItem>
+                </Link>
                 <Link href="/guidelines">
-                <MenuItem
-                  sx={{ py: "5px", px: "10px",my: "6px" }}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="18px"
-                    fontFamily="Varela"
-                  >
-                    Guidelines
-                  </Typography>
-                </MenuItem></Link>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Guidelines
+                    </Typography>
+                  </MenuItem>
+                </Link>
                 <Link href="/idea-template">
-                <MenuItem
-                  sx={{ py: "5px", px: "10px",my: "6px" }}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="18px"
-                    fontFamily="Varela"
-                  >
-                    Idea Template
-                  </Typography>
-                </MenuItem></Link>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Idea Template
+                    </Typography>
+                  </MenuItem>
+                </Link>
                 <Link href="/hackathon-details">
-                <MenuItem sx={{ py: "5px", px: "10px",my: "6px" }}>
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="18px"
-                    fontFamily="Varela"
-                  >
-                    Hackathon Details
-                  </Typography>
-                </MenuItem></Link>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Hackathon Details
+                    </Typography>
+                  </MenuItem>
+                </Link>
                 <Link href="/faq">
-                <MenuItem
-                  sx={{ py: "5px", px: "10px",my: "6px" }}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="18px"
-                    fontFamily="Varela"
-                  >
-                    FAQ
-                  </Typography>
-                </MenuItem></Link>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      FAQ
+                    </Typography>
+                  </MenuItem>
+                </Link>
               </Box>
             </Box>
             <Box
@@ -216,11 +226,19 @@ function NavBar() {
               >
                 <MenuIcon />
               </Button>
-              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} sx={{backgroundColor: "rgba(0, 0, 0, 0.4)",
+              <Drawer
+                anchor="right"
+                open={open}
+                onClose={toggleDrawer(false)}
+                sx={{
+                  backgroundColor: "rgba(0, 0, 0, 0.4)",
                   backdropFilter: "blur(4px)",
                   boxShadow:
-                    "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",}}>
-                <Box onClick={toggleDrawer(false)}
+                    "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
+                }}
+              >
+                <Box
+                  onClick={toggleDrawer(false)}
                   sx={{
                     minWidth: "60dvw",
                     p: 2,
@@ -246,18 +264,16 @@ function NavBar() {
                       <Link href="/">Discover HACKSPIRE</Link>
                     </Typography>
                   </MenuItem>
-                  <MenuItem
-                  sx={{ py: "20px", px: "12px" }}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="20px"
-                    fontFamily="Varela"
-                  >
-                    <Link href="/problem-statement">Problem Statements</Link>
-                  </Typography>
-                </MenuItem>
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/problem-statement">Problem Statements</Link>
+                    </Typography>
+                  </MenuItem>
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
@@ -277,19 +293,23 @@ function NavBar() {
                     >
                       <Link href="/guidelines">Guidelines</Link>
                     </Typography>
-                  </MenuItem >
+                  </MenuItem>
 
-                  <MenuItem onClick={() => scrollToSection("#")}  sx={{ py: "20px", px: "12px" }}>
-                <Typography
-                  color="white"
-                  fontSize="20px"
-                  fontFamily="Varela"
-                  variant="body2"
-
-                >
-                  <Link href="/rules-regulations">Rules and Regulations</Link>
-                </Typography>
-              </MenuItem>
+                  <MenuItem
+                    onClick={() => scrollToSection("#")}
+                    sx={{ py: "20px", px: "12px" }}
+                  >
+                    <Typography
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                      variant="body2"
+                    >
+                      <Link href="/rules-regulations">
+                        Rules and Regulations
+                      </Link>
+                    </Typography>
+                  </MenuItem>
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
@@ -310,18 +330,16 @@ function NavBar() {
                       <Link href="/hackathon-details">Hackathon Details</Link>
                     </Typography>
                   </MenuItem>
-                  <MenuItem
-                  sx={{ py: "20px", px: "12px" }}
-                >
-                  <Typography
-                    variant="body2"
-                    color="white"
-                    fontSize="20px"
-                    fontFamily="Varela"
-                  >
-                    <Link href="/faq">FAQ</Link>
-                  </Typography>
-                </MenuItem>
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/faq">FAQ</Link>
+                    </Typography>
+                  </MenuItem>
                 </Box>
               </Drawer>
             </Box>
@@ -343,7 +361,6 @@ function NavBar() {
                     "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
                 },
               }}
-
             >
               <MenuItem onClick={() => scrollToSection("aboutus")}>
                 <Typography
@@ -402,7 +419,9 @@ function NavBar() {
                   fontFamily="Varela"
                   padding="5px"
                 >
-                  <Link href="/rules-regulations">HACKSPIRE Rules and Regulations</Link>
+                  <Link href="/rules-regulations">
+                    HACKSPIRE Rules and Regulations
+                  </Link>
                 </Typography>
               </MenuItem>
             </Menu>

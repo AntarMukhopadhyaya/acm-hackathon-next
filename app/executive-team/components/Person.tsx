@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Props {
   name: string;
@@ -8,7 +9,13 @@ interface Props {
   designation: string;
 }
 
-const Person: React.FC<Props> = ({ name, description, image, role, designation }) => {
+const Person: React.FC<Props> = ({
+  name,
+  description,
+  image,
+  role,
+  designation,
+}) => {
   return (
     <>
       <div className="w-45 bg-inherit  sm:max-lg:py-10">
@@ -18,7 +25,7 @@ const Person: React.FC<Props> = ({ name, description, image, role, designation }
               <div className="rounded-[10px] p-4 sm:p-6  ">
                 <div className="avatar">
                   <div className="w-25 rounded-full ring ring-[#5CE1E6] ring-offset-base-100 ring-offset-2">
-                    <img src={image} alt={name} />
+                    <Image src={image} alt={name} width={300} height={300} />
                   </div>
                 </div>
               </div>
