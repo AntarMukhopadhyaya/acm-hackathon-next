@@ -84,7 +84,18 @@ export default function Hero() {
                   fontSize: "22px",
                 }}
               >
-                Future Institute of Engineering and Management SONARPUR | KOLKATA
+                Future Institute of Engineering and Management
+              </Typography>
+              <Typography
+                color="white"
+                sx={{
+                  alignSelf: "left",
+                  width: { sm: "100%", md: "100%" },
+                  fontFamily: "Varela",
+                  fontSize: "22px",
+                }}
+              >
+                SONARPUR | KOLKATA
               </Typography>
               <Typography
                 variant="h1"
@@ -114,7 +125,7 @@ export default function Hero() {
                 className="sm:max-lg:self-center"
                 src="/images/fiemacm.png"
                 alt="logo of HACKSPIRE"
-                style={{ width: "200px", height: "auto", cursor: "pointer" }}
+                style={{ width: "250px", height: "auto", cursor: "pointer" }}
               />
               <Stack
                 direction={{ xs: "column", sm: "row" }}
