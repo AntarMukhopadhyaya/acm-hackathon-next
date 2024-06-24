@@ -20,10 +20,6 @@ export const themes = [
     image: "/images/Themes/greentech.png",
   },
   {
-    title: "Organisational Innovation",
-    image: "/images/Themes/organization.png",
-  },
-  {
     title: "Smart Retail",
     image: "/images/Themes/retail.png",
   },
