@@ -104,14 +104,13 @@ function ThemeSection() {
                       </p>
                     </div>
                     <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 flex justify-center mt-2">
-                      <a
-                        className="group inline-block rounded-full bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] p-[2px] hover:text-[#0F337F] focus:outline-none focus:ring active:text-opacity-75"
-                        href="/problem-statement"
-                      >
-                        <span className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent" style={{fontFamily:'Varela'}}>
-                          Know more
-                        </span>
-                      </a>
+                        <Link href={theme.link}
+                          className="group inline-block rounded-full bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] p-[2px] hover:text-[#0F337F] focus:outline-none focus:ring active:text-opacity-75"
+                        >
+                          <span className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent" style={{fontFamily:'Varela'}}>
+                            Know more
+                          </span>
+                        </Link>
                     </div>
                   </div>
                 </div>
