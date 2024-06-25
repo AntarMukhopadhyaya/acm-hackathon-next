@@ -32,9 +32,9 @@ const TiltCard = ({ card }: { card: CardType }) => {
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return [0, 0];
-
+    
     const rect = ref.current.getBoundingClientRect();
-
+    
     const width = rect.width;
     const height = rect.height;
 
