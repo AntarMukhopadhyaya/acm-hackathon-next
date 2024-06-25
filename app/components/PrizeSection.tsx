@@ -1,17 +1,23 @@
+
 "use client";
+
+
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Box } from "@mui/material";
 import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+
+import { motion, useScroll } from "framer-motion"
+
 
 const PrizeSection = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
-  });
+  const ref = useRef<HTMLDivElement>(null)
+    const{scrollYProgress} = useScroll({
+        target: ref,
+        offset: ["0 1", "1.33 1"]
+    })
+
   return (
     <Container className="prizeSection" id="prizes">
       <Box
@@ -88,6 +94,7 @@ const PrizeSection = () => {
           >
             PRIZES
           </Typography>
+
         </Typography>
       </Box>
       <motion.div

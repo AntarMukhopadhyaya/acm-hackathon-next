@@ -54,16 +54,34 @@ const Sponsors = () => {
           alt="Silver Sponsors"
         />
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'center', gap: isSmallScreen ? 1 : 2, mb: 20, flexWrap: isSmallScreen ? 'wrap' : 'nowrap' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', gap: isSmallScreen ? 1 : 6, mb: 20, flexWrap: isSmallScreen ? 'wrap' : 'nowrap' }}>
         <Image
           src="/images/acm.jpeg"
-          width={isSmallScreen ? 300 : 600}
+          width={isSmallScreen ? 150 : 150}
+          height={20}
+          alt="acm"
+        />
+        <Image
+          src="/images/aicte.jpeg"
+          width={isSmallScreen ? 150 : 150}
+          height={20}
+          alt="acm"
+        />
+        <Image
+          src="/images/iic.jpeg"
+          width={isSmallScreen ? 150 : 250}
+          height={20}
+          alt="acm"
+        />
+        <Image
+          src="/images/moe.jpeg"
+          width={isSmallScreen ? 150 : 250}
           height={20}
           alt="acm"
         />
         <Image
           src="/images/eds.jpeg"
-          width={isSmallScreen ? 150 : 300}
+          width={isSmallScreen ? 150 : 250}
           height={20}
           alt="eds"
         />
