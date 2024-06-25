@@ -13,17 +13,17 @@ interface StructureProps {
 const Structure: React.FC<StructureProps> = ({ domain, faqs }) => {
   return (
     <section className="bg-inherit">
-      <div className="p-8 md:p-12 lg:px-16 lg:py-20 sm:max-lg:pt-20">
+      <div className="p-4 sm:p-8 md:p-12 lg:px-16 lg:py-20 sm:max-lg:pt-20">
         <div className="mx-auto max-w-5xl text-center mt-20" style={{ fontFamily: "blanka" }}>
-          <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent sm:text-5xl">
+          <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl sm:text-3xl md:text-5xl pb-2 font-extrabold text-transparent">
             {domain}
           </h1>
         </div>
         <div className="divide-y divide-gray-100 rounded-xl mt-10 border border-gray-100 bg-white dark:divide-gray-800 dark:border-gray-800 dark:bg-gray-900">
           {faqs.map((faq, index) => (
-            <details className="group p-6 [&_summary::-webkit-details-marker]:hidden" key={index}>
+            <details className="group p-4 sm:p-6 [&_summary::-webkit-details-marker]:hidden" key={index}>
               <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-white">
-                <h2 className="text-lg font-medium">{faq.statementHeading}</h2>
+                <h2 className="text-xs sm:text-sm md:text-xl font-medium">{faq.statementHeading}</h2>
                 <span className="relative size-5 shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const Structure: React.FC<StructureProps> = ({ domain, faqs }) => {
                   </svg>
                 </span>
               </summary>
-              <p className="mt-4 leading-relaxed text-gray-700 dark:text-gray-200">
+              <p className="mt-2 sm:mt-4 text-xs sm:text-sm md:text-lg leading-relaxed text-gray-700 dark:text-gray-200">
                 {faq.problemStatement}
               </p>
             </details>
