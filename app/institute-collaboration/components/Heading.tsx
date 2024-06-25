@@ -7,7 +7,7 @@ interface Props {
 const Heading: React.FC<Props> = ({ title }) => {
   return (
     <>
-      <div className="justify-center" style={{ fontFamily: "blanka" }}>
+      <div className="justify-center" style={{ fontFamily: "blanka", marginBottom: "50px" }}>
         <div className="gird grid-row-2 grid-flow-col justify-center text-center w-30">
           {title === "INSTITUTE COLLABORATORS" ? (
           <div>

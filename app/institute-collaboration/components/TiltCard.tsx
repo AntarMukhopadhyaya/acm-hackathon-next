@@ -16,6 +16,21 @@ export type CardType = {
   id: number;
 };
 
+export const CustomCard = ({ card }: { card: CardType }) => (
+  <div
+    className="relative h-[300px] w-[400px] rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
+    style={{
+      backgroundImage: `url(${card.url})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+    <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent">
+      <p className="w-full p-4 text-center text-white">{card.title}</p>
+    </div>
+  </div>
+);
+
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
