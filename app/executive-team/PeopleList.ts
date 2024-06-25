@@ -136,14 +136,6 @@ export const people = [
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Prasanta Mazumder_CSE_CSE_CC.png",
   },
   {
-    name: "Prof. Suprativ Saha",
-    description: "CSE (DS) Dept, FIEM",
-    role: "Core Committee",
-    designation: "Core Committee",
-    image:
-      "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Suprativ Saha_CSE(DS)_CC.png",
-  },
-  {
     name: "Prof. Subhasis Mitra",
     description: "IT Dept, FIEM",
     role: "Core Committee",
@@ -190,6 +182,14 @@ export const people = [
     designation: "Core Committee",
     image:
       "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Pallab Basu Mallik_ME_CC.png",
+  },
+  {
+    name: "Prof. Suprativ Saha",
+    description: "CSE (DS) Dept, FIEM",
+    role: "Core Committee",
+    designation: "Core Committee",
+    image:
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Core Committee/Prof. Suprativ Saha_CSE(DS)_CC.png",
   },
   {
     name: "Mr. Tapas Banerjee",
@@ -285,7 +285,7 @@ export const people = [
     role: "Core Committee",
     designation: "Technical Program Design",
     image:
-      "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Kushal Kumar Roy_CA_TPD.jpeg",
+      "/images/People/FIEM_HACKATHON_COMMITTEE/Technical Program Design/Prof. Kushal Kumar Roy_CA_TPD.jpg",
   },
   {
     name: "Dr. Dipayan Nath",

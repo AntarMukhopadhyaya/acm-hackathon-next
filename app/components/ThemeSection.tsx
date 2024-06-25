@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { themes } from "./ThemesList";
 import Link from "next/link";
-import './fonts/font.css'
+import "./fonts/font.css";
 
 function ThemeSection() {
   var settings = {
@@ -99,18 +99,25 @@ function ThemeSection() {
                         height: "50px",
                       }}
                     >
-                      <p className="text-xl font-bold text-white text-center sm:text-2xl mt-2" style={{fontFamily:'blanka'}}>
+                      <p
+                        className="text-xl font-bold text-white text-center sm:text-2xl mt-2"
+                        style={{ fontFamily: "blanka" }}
+                      >
                         {theme.title}
                       </p>
                     </div>
                     <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 flex justify-center mt-2">
-                        <Link href={theme.link}
-                          className="group inline-block rounded-full bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] p-[2px] hover:text-[#0F337F] focus:outline-none focus:ring active:text-opacity-75"
+                      <Link
+                        href={theme.link}
+                        className="group inline-block rounded-full bg-gradient-to-r from-[#3F80FF] to-[#5CE1E6] p-[2px] hover:text-[#0F337F] focus:outline-none focus:ring active:text-opacity-75"
+                      >
+                        <span
+                          className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent"
+                          style={{ fontFamily: "Varela" }}
                         >
-                          <span className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent" style={{fontFamily:'Varela'}}>
-                            Know more
-                          </span>
-                        </Link>
+                          Know more
+                        </span>
+                      </Link>
                     </div>
                   </div>
                 </div>

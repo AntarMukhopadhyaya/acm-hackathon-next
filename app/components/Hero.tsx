@@ -21,11 +21,8 @@ export default function Hero() {
     };
   }, []);
   return (
-    <Container id="hero" sx={{ maxWidth: { xs: "1300px" }}}>
-      <Stack
-        alignContent="center"
-        sx={{ pb: { xs: 20 }, pt: { xs: 10 }, }}
-      >
+    <Container id="hero" sx={{ maxWidth: { xs: "1300px" } }}>
+      <Stack alignContent="center" sx={{ pb: { xs: 20 }, pt: { xs: 10 } }}>
         <Grid
           className="sm:max-lg:flex sm:max-lg:justify-center sm:max-lg:text-center"
           container
@@ -38,7 +35,6 @@ export default function Hero() {
               alignItems: "center",
             },
             pt: { sm: 10 },
-            
           })}
         >
           <Grid
@@ -149,7 +145,7 @@ export default function Hero() {
                   className="apply-button"
                   data-hackathon-slug="hackspire"
                   data-button-theme="light"
-                  style={{height: "44px", width: "312px"}}
+                  style={{ height: "44px", width: "312px" }}
                 ></div>
               </Stack>
               {/* <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
@@ -168,16 +164,20 @@ export default function Hero() {
               pl: { xs: 50 },
               display: { xs: "none", sm: "block" },
               ml: { xs: 25 },
-              mt:{sm:5},
-              alignItems:{sm:"end"}
-
+              mt: { sm: 5 },
+              alignItems: { sm: "end" },
             }}
           >
             <Box sx={{ textAlign: "right" }}>
               <img
                 src="/images/hand.png"
                 alt="hand"
-                style={{ width: "500px", height: "auto", cursor: "pointer", marginLeft:"10px" }}
+                style={{
+                  width: "500px",
+                  height: "auto",
+                  cursor: "pointer",
+                  marginLeft: "10px",
+                }}
               />
               <Box sx={{ ml: 15 }}>
                 <Timer />

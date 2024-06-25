@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,9 +12,12 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
+import { AnimatePresence, motion } from "framer-motion";
 
 import "./fonts/font.css";
 import Link from "next/link";
+
+import FlyoutLink from "./FlyoutContent";
 
 const logoStyle = {
   width: "130px",
@@ -111,7 +115,7 @@ function NavBar() {
                     aria-haspopup="true"
                     aria-expanded={openMenu ? "true" : undefined}
                   >
-                    <Link href="/">
+                    <Link href="/" className="hover:underline">
                       <Typography
                         variant="body2"
                         color="white"
@@ -135,7 +139,8 @@ function NavBar() {
                     </Typography>
                   </MenuItem>
                 </Link>
-                <Link href="/executive-team">
+
+                <FlyoutLink href="#" FlyoutContent={TeamContent}>
                   <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
                     <Typography
                       variant="body2"
@@ -143,22 +148,11 @@ function NavBar() {
                       fontSize="18px"
                       fontFamily="Varela"
                     >
-                      Executive Team
+                      Teams
                     </Typography>
                   </MenuItem>
-                </Link>
-                <Link href="/student-body">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
-                    <Typography
-                      variant="body2"
-                      color="white"
-                      fontSize="18px"
-                      fontFamily="Varela"
-                    >
-                      Student Body
-                    </Typography>
-                  </MenuItem>
-                </Link>
+                </FlyoutLink>
+
                 <Link href="/guidelines">
                   <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
                     <Typography
@@ -171,6 +165,20 @@ function NavBar() {
                     </Typography>
                   </MenuItem>
                 </Link>
+
+                <Link href="/rules-regulations">
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Rules
+                    </Typography>
+                  </MenuItem>
+                </Link>
+
                 <Link href="/idea-template">
                   <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
                     <Typography
@@ -274,6 +282,7 @@ function NavBar() {
                       <Link href="/problem-statement">Problem Statements</Link>
                     </Typography>
                   </MenuItem>
+
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
@@ -284,6 +293,29 @@ function NavBar() {
                       <Link href="/executive-team">Executive Team</Link>
                     </Typography>
                   </MenuItem>
+
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/student-body">Student Body</Link>
+                    </Typography>
+                  </MenuItem>
+
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="20px"
+                      fontFamily="Varela"
+                    >
+                      <Link href="/institute-collaboration">Collaborators</Link>
+                    </Typography>
+                  </MenuItem>
+
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       variant="body2"
@@ -295,19 +327,14 @@ function NavBar() {
                     </Typography>
                   </MenuItem>
 
-                  <MenuItem
-                    onClick={() => scrollToSection("#")}
-                    sx={{ py: "20px", px: "12px" }}
-                  >
+                  <MenuItem sx={{ py: "20px", px: "12px" }}>
                     <Typography
                       color="white"
                       fontSize="20px"
                       fontFamily="Varela"
                       variant="body2"
                     >
-                      <Link href="/rules-regulations">
-                        Rules and Regulations
-                      </Link>
+                      <Link href="/rules-regulations">Rules</Link>
                     </Typography>
                   </MenuItem>
                   <MenuItem sx={{ py: "20px", px: "12px" }}>
@@ -372,16 +399,6 @@ function NavBar() {
                   About HACKSPIRE 2024
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={() => scrollToSection("processflow")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  HACKSPIRE Process Flow
-                </Typography>
-              </MenuItem>
               <MenuItem onClick={() => scrollToSection("theme")}>
                 <Typography
                   color="white"
@@ -392,7 +409,18 @@ function NavBar() {
                   HACKSPIRE Themes
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={() => scrollToSection("#")}>
+              <MenuItem onClick={() => scrollToSection("processflow")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  HACKSPIRE Process Flow
+                </Typography>
+              </MenuItem>
+
+              {/* <MenuItem onClick={() => scrollToSection("#")}>
                 <Typography
                   color="white"
                   fontSize="16px"
@@ -401,7 +429,7 @@ function NavBar() {
                 >
                   HACKSPIRE Teams
                 </Typography>
-              </MenuItem>
+              </MenuItem> */}
               <MenuItem onClick={() => scrollToSection("prizes")}>
                 <Typography
                   color="white"
@@ -412,7 +440,7 @@ function NavBar() {
                   HACKSPIRE Rewards & Prizes{" "}
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={() => scrollToSection("#")}>
+              {/* <MenuItem onClick={() => scrollToSection("sponsors")}>
                 <Typography
                   color="white"
                   fontSize="16px"
@@ -423,7 +451,7 @@ function NavBar() {
                     HACKSPIRE Rules and Regulations
                   </Link>
                 </Typography>
-              </MenuItem>
+              </MenuItem> */}
             </Menu>
           </Toolbar>
         </Container>
@@ -431,5 +459,29 @@ function NavBar() {
     </div>
   );
 }
+
+const TeamContent = () => {
+  return (
+    <div className="w-64 bg-white p-6 shadow-xl">
+      <div className="mb-3 space-y-3">
+        <h3 className="font-semibold">
+          <a href="/executive-team" className="block hover:underline">
+            Executive Team
+          </a>
+        </h3>
+        <h3 className="font-semibold">
+          <a href="/student-body" className="block hover:underline">
+            Student Body
+          </a>
+        </h3>
+        <h3 className="font-semibold">
+          <a href="institute-collaboration" className="block hover:underline">
+            Collaborations
+          </a>
+        </h3>
+      </div>
+    </div>
+  );
+};
 
 export default NavBar;
