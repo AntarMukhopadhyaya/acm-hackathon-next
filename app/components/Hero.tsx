@@ -121,40 +121,19 @@ export default function Hero() {
                 className="sm:max-lg:self-center"
                 src="/images/fiemacm.png"
                 alt="logo of HACKSPIRE"
-                style={{ width: "250px", height: "auto", cursor: "pointer" }}
+                style={{
+                  width: "250px",
+                  height: "auto",
+                  cursor: "pointer",
+                  marginBottom: "15px",
+                }}
               />
-              <Stack
-                direction={{ xs: "column", sm: "row" }}
-                spacing={1}
-                useFlexGap
-                sx={{ pt: 2, width: { xs: "100%", sm: "100%" } }}
-              >
-                {/* <TextField
-                      id="outlined-basic"
-                      hiddenLabel
-                      size="small"
-                      variant="outlined"
-                      aria-label="Enter your email address"
-                      placeholder="Your email address"
-                      inputProps={{
-                        autocomplete: 'off',
-                        ariaLabel: 'Enter your email address',
-                      }}
-                    /> */}
-                <div
-                  className="apply-button"
-                  data-hackathon-slug="hackspire"
-                  data-button-theme="light"
-                  style={{ height: "44px", width: "312px" }}
-                ></div>
-              </Stack>
-              {/* <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
-                    By clicking &quot;Start now&quot; you agree to our&nbsp;
-                    <Link href="#" color="primary">
-                      Terms & Conditions
-                    </Link>
-                    .
-                  </Typography> */}
+              <div
+                className="apply-button"
+                data-hackathon-slug="hackspire"
+                data-button-theme="light"
+                style={{ height: "44px", width: "312px" }}
+              ></div>
             </Stack>
           </Grid>
           <Grid
