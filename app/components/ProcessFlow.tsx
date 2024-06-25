@@ -4,8 +4,23 @@ import "./styles/ProcessFlow.css";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 function ProcessFlow2() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Check screen size on initial load
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const steps = [
     {
       step: 1,
@@ -84,22 +99,35 @@ function ProcessFlow2() {
         <div className="outer">
           {steps.map(({ step, text, img }, index) => (
             <div className="cardm" key={step}>
-              <motion.div
-                className="info"
-                initial={{ x: index % 2 === 0 ? 350 : -350, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: false }}
-                transition={{ type: "spring", stiffness: 60 }}
-              >
-                <h3 className="title">
-                  <img
-                    src={`/images/process-flow/${img}`}
-                    alt={`Step ${step}`}
-                    id={`img${step}`}
-                  />
-                </h3>
-                <p>{text}</p>
-              </motion.div>
+              {isMobile ? (
+                <div className="info">
+                  <h3 className="title">
+                    <img
+                      src={`/images/process-flow/${img}`}
+                      alt={`Step ${step}`}
+                      id={`img${step}`}
+                    />
+                  </h3>
+                  <p>{text}</p>
+                </div>
+              ) : (
+                <motion.div
+                  className="info"
+                  initial={{ x: index % 2 === 0 ? 350 : -350, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ type: "spring", stiffness: 60 }}
+                >
+                  <h3 className="title">
+                    <img
+                      src={`/images/process-flow/${img}`}
+                      alt={`Step ${step}`}
+                      id={`img${step}`}
+                    />
+                  </h3>
+                  <p>{text}</p>
+                </motion.div>
+              )}
             </div>
           ))}
         </div>
