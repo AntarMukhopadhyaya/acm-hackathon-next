@@ -399,16 +399,6 @@ function NavBar() {
                   About HACKSPIRE 2024
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={() => scrollToSection("processflow")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  HACKSPIRE Process Flow
-                </Typography>
-              </MenuItem>
               <MenuItem onClick={() => scrollToSection("theme")}>
                 <Typography
                   color="white"
@@ -419,6 +409,17 @@ function NavBar() {
                   HACKSPIRE Themes
                 </Typography>
               </MenuItem>
+              <MenuItem onClick={() => scrollToSection("processflow")}>
+                <Typography
+                  color="white"
+                  fontSize="16px"
+                  fontFamily="Varela"
+                  padding="5px"
+                >
+                  HACKSPIRE Process Flow
+                </Typography>
+              </MenuItem>
+
               {/* <MenuItem onClick={() => scrollToSection("#")}>
                 <Typography
                   color="white"
