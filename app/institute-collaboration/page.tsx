@@ -45,14 +45,14 @@ const Collaborators = () => {
   };
   return (
     <div className="p-8 md:py-40 lg:px-16 lg:py-40 sm:py-40">
-      <Heading title="INSTITUTE COLLABORATORS" />
+      <Heading title="INSTITUTE COLLABORATORS" isMobile={isMobile} />
       <div className="flex items-center gap-10" style={{ flexWrap: "wrap" }}>
         {renderCards("Institute Collaboration")}
       </div>
 
       <div className="bg-inherit" style={{ marginTop: "100px" }} />
 
-      <Heading title="ACM STUDENT CHAPTER COLLABORATORS" />
+      <Heading title="ACM STUDENT CHAPTER COLLABORATORS" isMobile={isMobile} />
       <div className="flex items-center gap-10" style={{ flexWrap: "wrap" }}>
         {renderCards("ACM Student Chapter")}
       </div>
