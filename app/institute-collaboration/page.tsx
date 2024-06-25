@@ -9,62 +9,74 @@ import {
   useScroll,
 } from "framer-motion";
 
-import TiltCard from "./components/TiltCard";
+import TiltCard, { CustomCard } from "./components/TiltCard";
 import { cards } from "./colleges";
 import { ClassNames } from "@emotion/react";
 import Heading from "./components/Heading";
+import { useState, useEffect } from "react";
 
 // export default Example;
 
 const Collaborators = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Check screen size on initial load
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const renderCards = (role: string) => {
+    return cards
+      .filter((card) => card.role === role)
+      .map((card) => {
+        if (isMobile) {
+          return <CustomCard card={card} key={card.id} />;
+        }
+        return <TiltCard card={card} key={card.id} />;
+      });
+  };
   return (
     <div className="p-8 md:py-40 lg:px-16 lg:py-40 sm:py-40">
-      {/* <div className="bg-inherit" style={{ marginTop: "100px" }} /> */}
       <Heading title="INSTITUTE COLLABORATORS" />
-      <div
-        className=" flex h-screen items-center gap-10"
-        style={{ flexWrap: "wrap" }}
-      >
-        {cards
-          .filter((card) => card.role === "Institute Collaboration")
-          .map((card) => {
-            return <TiltCard card={card} key={card.id} />;
-          })}
+      <div className="flex items-center gap-10" style={{ flexWrap: "wrap" }}>
+        {renderCards("Institute Collaboration")}
       </div>
-      <div className="bg-inherit" style={{ marginTop: "50px" }} />
+
+      <div className="bg-inherit" style={{ marginTop: "100px" }} />
+
       <Heading title="ACM STUDENT CHAPTER COLLABORATORS" />
-      <div
-        className=" flex h-screen items-center gap-10"
-        style={{ flexWrap: "wrap" }}
-      >
-        {cards
-          .filter((card) => card.role === "ACM Student Chapter")
-          .map((card) => {
-            return <TiltCard card={card} key={card.id} />;
-          })}
+      <div className="flex items-center gap-10" style={{ flexWrap: "wrap" }}>
+        {renderCards("ACM Student Chapter")}
       </div>
     </div>
-  );
-};
+    // <div className="p-8 md:py-40 lg:px-16 lg:py-40 sm:py-40">
+    //   {/* <div className="bg-inherit" style={{ marginTop: "100px" }} /> */}
+    //   <Heading title="INSTITUTE COLLABORATORS" />
+    //   <div
+    //     className=" flex h-screen items-center gap-10"
+    //     style={{ flexWrap: "wrap" }}
+    //   >
+    //     {renderCards("ACM Student Chapter")}
+    //   </div>
 
-const HorizontalScrollCarousel = () => {
-  const targetRef = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
+    //   <div className="bg-inherit" style={{ marginTop: "50px" }} />
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
-
-  return (
-    <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-10">
-          {cards.map((card) => {
-            return <TiltCard card={card} key={card.id} />;
-          })}
-        </motion.div>
-      </div>
-    </section>
+    //   <Heading title="ACM STUDENT CHAPTER COLLABORATORS" />
+    //   <div
+    //     className=" flex h-screen items-center gap-10"
+    //     style={{ flexWrap: "wrap" }}
+    //   >
+    //     renderCards("ACM Student Chapter")
+    //   </div>
+    // </div>
   );
 };
 
