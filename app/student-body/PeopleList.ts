@@ -77,7 +77,7 @@ export const people = [
   },
   {
     name: "Abhradeep Paul",
-    description: "Male Model",
+    description: "",
     role: "CC Member",
     designation: "plz ignore this",
     image:
@@ -92,7 +92,7 @@ export const people = [
   },
 
   {
-    name: "Ananya",
+    name: "Ananya Dutta",
     description: "",
     role: "CC Member",
     designation: "plz ignore this",
@@ -103,6 +103,6 @@ export const people = [
     description: "",
     role: "CC Member",
     designation: "plz ignore this",
-    image: "/images/People/Student_Body/profile - SATWIK DEY.jpg",
+    image: "/images/People/Student_Body/Satwik.jpg",
   },
 ];

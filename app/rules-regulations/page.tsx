@@ -29,7 +29,7 @@ const rulesRegulation = () => {
               </div>
               <div className="timeline-start md:text-end mb-10">
                 <div className="text-lg font-black">1</div>
-                Each team must consist of a minimum of 3 students and a maximum of 6 student members, with one mandatory mentor from either the industry or academic institution.
+                Each team must consist of a minimum of 3 students and a maximum of 6 student members, (optional) with one mentor from either the industry or academic institution.
               </div>
               <hr />
             </li>
