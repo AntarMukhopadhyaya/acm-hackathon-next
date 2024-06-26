@@ -1,10 +1,10 @@
 const Guidelines = () => {
   return (
-    <section className="bg-inherit ">
-      <div className="p-8 md:p-12 lg:px-16 lg:py-20 ">
+    <section className="bg-inherit pt-20">
+      <div className="p-8 md:p-12 lg:px-16 lg:py-20 pt-20">
         <div
-          className="mx-auto max-w-5xl text-center mt-20"
-          style={{ fontFamily: "blanka" }}
+          className="mx-auto max-w-5xl text-center"
+          style={{ fontFamily: "blanka"}}
         >
           <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent sm:text-5xl">
             GUIDELINES
