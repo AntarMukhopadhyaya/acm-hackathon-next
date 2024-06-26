@@ -13,6 +13,7 @@ import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./fonts/font.css";
 import Link from "next/link";
+import "./styles/navbar.css";
 
 import FlyoutLink from "./FlyoutContent";
 
@@ -105,8 +106,9 @@ function NavBar() {
                 </Link>
               </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <FlyoutLink href="/" FlyoutContent={MenuContent}>
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx:"3px" }}>
+                  <FlyoutLink href="/" FlyoutContent={MenuContent}>
                     <Typography
                       variant="body2"
                       color="white"
@@ -115,11 +117,13 @@ function NavBar() {
                     >
                       Discover HACKSPIRE
                     </Typography>
+                    </FlyoutLink>
                   </MenuItem>
-                </FlyoutLink>
+                
                 <Link href="/problem-statement">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                  <MenuItem  sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
                     <Typography
+                    className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -130,8 +134,9 @@ function NavBar() {
                   </MenuItem>
                 </Link>
 
-                <FlyoutLink href="#" FlyoutContent={TeamContent}>
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" , mx:"3px"}}>
+                  <FlyoutLink href="#" FlyoutContent={TeamContent}>
                     <Typography
                       variant="body2"
                       color="white"
@@ -140,12 +145,14 @@ function NavBar() {
                     >
                       Teams
                     </Typography>
+                    </FlyoutLink>
                   </MenuItem>
-                </FlyoutLink>
+                
 
                 <Link href="/guidelines">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx:"3px" }}>
                     <Typography
+                    className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -157,8 +164,9 @@ function NavBar() {
                 </Link>
 
                 <Link href="/rules-regulations">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
                     <Typography
+                    className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -170,8 +178,9 @@ function NavBar() {
                 </Link>
 
                 <Link href="/idea-template">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
                     <Typography
+                    className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -182,8 +191,9 @@ function NavBar() {
                   </MenuItem>
                 </Link>
                 <Link href="/hackathon-details">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx:"3px" }}>
                     <Typography
+                    className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -194,8 +204,9 @@ function NavBar() {
                   </MenuItem>
                 </Link>
                 <Link href="/faq">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
                     <Typography
+                    className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
