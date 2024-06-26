@@ -8,12 +8,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
-import { AnimatePresence, motion } from "framer-motion";
-
 import "./fonts/font.css";
 import Link from "next/link";
 
@@ -108,25 +105,18 @@ function NavBar() {
                 </Link>
               </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <MenuItem sx={{ py: "5px", px: "10px" }}>
-                  <Button
-                    onClick={handleClick}
-                    aria-controls={openMenu ? "basic-menu" : undefined}
-                    aria-haspopup="true"
-                    aria-expanded={openMenu ? "true" : undefined}
-                  >
-                    <Link href="/" className="hover:underline">
-                      <Typography
-                        variant="body2"
-                        color="white"
-                        fontSize="18px"
-                        fontFamily="Varela"
-                      >
-                        Discover HACKSPIRE
-                      </Typography>
-                    </Link>
-                  </Button>
-                </MenuItem>
+                <FlyoutLink href="/" FlyoutContent={MenuContent}>
+                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
+                    <Typography
+                      variant="body2"
+                      color="white"
+                      fontSize="18px"
+                      fontFamily="Varela"
+                    >
+                      Discover HACKSPIRE
+                    </Typography>
+                  </MenuItem>
+                </FlyoutLink>
                 <Link href="/problem-statement">
                   <MenuItem sx={{ py: "5px", px: "10px", my: "6px" }}>
                     <Typography
@@ -370,89 +360,6 @@ function NavBar() {
                 </Box>
               </Drawer>
             </Box>
-            <Menu
-              anchorEl={anchorEl}
-              id="basic-menu"
-              open={openMenu}
-              onClose={handleClose}
-              onClick={handleClose}
-              MenuListProps={{
-                "aria-labelledby": "basic-button",
-              }}
-              sx={{
-                mt: "1px",
-                "& .MuiMenu-paper": {
-                  backgroundColor: "rgba(0, 0, 0, 0.4)",
-                  backdropFilter: "blur(24px)",
-                  boxShadow:
-                    "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
-                },
-              }}
-            >
-              <MenuItem onClick={() => scrollToSection("aboutus")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  About HACKSPIRE 2024
-                </Typography>
-              </MenuItem>
-              <MenuItem onClick={() => scrollToSection("theme")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  HACKSPIRE Themes
-                </Typography>
-              </MenuItem>
-              <MenuItem onClick={() => scrollToSection("processflow")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  HACKSPIRE Process Flow
-                </Typography>
-              </MenuItem>
-
-              {/* <MenuItem onClick={() => scrollToSection("#")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  HACKSPIRE Teams
-                </Typography>
-              </MenuItem> */}
-              <MenuItem onClick={() => scrollToSection("prizes")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  HACKSPIRE Rewards & Prizes{" "}
-                </Typography>
-              </MenuItem>
-              {/* <MenuItem onClick={() => scrollToSection("sponsors")}>
-                <Typography
-                  color="white"
-                  fontSize="16px"
-                  fontFamily="Varela"
-                  padding="5px"
-                >
-                  <Link href="/rules-regulations">
-                    HACKSPIRE Rules and Regulations
-                  </Link>
-                </Typography>
-              </MenuItem> */}
-            </Menu>
           </Toolbar>
         </Container>
       </AppBar>
@@ -462,7 +369,7 @@ function NavBar() {
 
 const TeamContent = () => {
   return (
-    <div className="w-64 bg-white p-6 shadow-xl">
+    <div className="w-64 p-6">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">
           <a href="/executive-team" className="block hover:underline">
@@ -475,8 +382,76 @@ const TeamContent = () => {
           </a>
         </h3>
         <h3 className="font-semibold">
-          <a href="institute-collaboration" className="block hover:underline">
+          <a href="/institute-collaboration" className="block hover:underline">
             Collaborations
+          </a>
+        </h3>
+      </div>
+    </div>
+  );
+};
+
+const MenuContent = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = (newOpen: boolean) => () => {
+    setOpen(newOpen);
+  };
+  const scrollToSection = (sectionId: string) => {
+    const sectionElement = document.getElementById(sectionId);
+    const offset = 128;
+    if (sectionElement) {
+      const targetScroll = sectionElement.offsetTop - offset;
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+      window.scrollTo({
+        top: targetScroll,
+        behavior: "smooth",
+      });
+      setOpen(false);
+    }
+  };
+
+  return (
+    <div className="w-64 p-6">
+      <div className="mb-3 space-y-3">
+        <h3 className="font-semibold">
+          <a
+            onClick={() => scrollToSection("aboutus")}
+            className="block hover:underline"
+          >
+            About HACKSPIRE 2024
+          </a>
+        </h3>
+        <h3 className="font-semibold">
+          <a
+            onClick={() => scrollToSection("theme")}
+            className="block hover:underline"
+          >
+            HACKSPIRE Themes
+          </a>
+        </h3>
+        <h3 className="font-semibold">
+          <a
+            onClick={() => scrollToSection("processflow")}
+            className="block hover:underline"
+          >
+            HACKSPIRE Process Flow
+          </a>
+        </h3>
+        <h3 className="font-semibold">
+          <a
+            onClick={() => scrollToSection("processflow")}
+            className="block hover:underline"
+          >
+            HACKSPIRE Process Flow
+          </a>
+        </h3>
+        <h3 className="font-semibold">
+          <a
+            onClick={() => scrollToSection("prizes")}
+            className="block hover:underline"
+          >
+            HACKSPIRE Rewards & Prizes{" "}
           </a>
         </h3>
       </div>
