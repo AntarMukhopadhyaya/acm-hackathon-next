@@ -14,16 +14,16 @@ const Guidelines = () => {
             className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
-            <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
+            <h2 className="mt-0.5 text-md sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               PARTICIPATION ELIGIBILITY:
             </h2>
 
-            <p className="mt-2 text-md/relaxed text-gray-400">
+            <p className="mt-2 text-md/relaxed sm:text-sm/relaxed md:text-lg/relaxed text-gray-400">
               Following candidates are eligible to participate in the HackSpire
               Hackathon: A student of College or University, pursuing any of the
               following programme
             </p>
-            <ul className="mt-2 ml-4 text-md/relaxed text-gray-400 list-disc">
+            <ul className="mt-2 ml-4 text-md/relaxed sm:text-sm/relaxed md:text-lg/relaxed text-gray-400 list-disc">
               <li>BE/ B. Tech/Diploma</li>
               <li>MCA/BCA</li>
               <li>ME/ M. Tech.</li>
@@ -36,11 +36,11 @@ const Guidelines = () => {
             className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
-            <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
+            <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               SELECTION OF MENTOR (OPTIONAL):
             </h2>
 
-            <p className="mt-2 text-md/relaxed text-gray-400">
+            <p className="mt-2 text-md/relaxed sm:text-sm/relaxed md:text-lg/relaxed text-gray-400">
               A mentor can be selected from either the Industry or Academia,
               possessing relevant experience and qualifications to effectively
               guide a team. Ideally, mentors should be chosen from within the
@@ -59,11 +59,11 @@ const Guidelines = () => {
             className="rounded-lg border text-left mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
-            <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
+            <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               FORMING A TEAM:
             </h2>
 
-            <p className="mt-2 text-md/relaxed text-gray-400">
+            <p className="mt-2 text-md/relaxed sm:text-sm/relaxed md:text-lg/relaxed text-gray-400">
               A team must be formed; consisting of 3 - 6 members with one Team
               Leader Each team must have a unique Team Name.
             </p>
@@ -73,10 +73,10 @@ const Guidelines = () => {
             className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
-            <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
+            <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               PRIMARY REGISTRATION:
             </h2>
-            <ul className="mt-2 ml-4 text-md/relaxed text-gray-400 list-disc">
+            <ul className="mt-2 ml-4 text-md/relaxed sm:text-sm/relaxed md:text-lg/relaxed text-gray-400 list-disc">
               <li>
                 Mentor / Team Leader should register the team at{" "}
                 <span className="font-bold text-white">DEVFOLIO</span>.
@@ -133,10 +133,10 @@ const Guidelines = () => {
             className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
-            <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
+            <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               IDEA APPROVAL & GRAND FINALE REGISTRATION:
             </h2>
-            <ul className="mt-2 ml-4 text-md/relaxed text-gray-400 list-disc">
+            <ul className="mt-2 ml-4 text-md/relaxed sm:text-sm/relaxed md:text-lg/relaxed text-gray-400 list-disc">
               <li>
                 After Idea Submission, the HackSpire Executive team will review
                 all details and all ideas will be evaluated. Once complete,
@@ -158,10 +158,10 @@ const Guidelines = () => {
             className="rounded-lg border text-left  mt-10 shadow-sm transition hover:shadow-lg hover:bg-white/10 hover:border-white/10 sm:p-6 border-gray-800 bg-gray-900 shadow-gray-700/25"
             style={{ fontFamily: "Varela" }}
           >
-            <h2 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-white">
+            <h2 className="mt-0.5 sm:text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
               GRAND FINALE:
             </h2>
-            <ul className="mt-2 ml-4 text-md/relaxed text-gray-400 list-disc">
+            <ul className="mt-2 ml-4 text-md/relaxed sm:text-sm/relaxed md:text-lg/relaxed text-gray-400 list-disc">
               <li>
                 The Grand Finale of HackSpire 2024 will be in{" "}
                 <span className="font-bold text-white">OFFLINE MODE</span>, held
