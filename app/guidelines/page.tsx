@@ -1,3 +1,6 @@
+import { FaFileDownload } from "react-icons/fa";
+
+
 const Guidelines = () => {
   return (
     <section className="bg-inherit pt-20">
@@ -178,6 +181,21 @@ const Guidelines = () => {
               </li>
             </ul>
           </article>
+          <p
+          className="mx-auto mt-20 text-white max-w-2xl sm:text-xl/relaxed  sm:max-lg:pb-5 lg:pb-10"
+          style={{ fontFamily: "Varela" }}
+        >
+          Download the Consent letter from the download button bellow.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a
+            className="flex justify-center gap-4 w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+            href="/files/consentLetter.docx"
+            download="Consent Letter"
+          >
+            DOWNLOAD <FaFileDownload className="text-lg" />
+          </a>
+          </div>
         </div>
       </div>
     </section>

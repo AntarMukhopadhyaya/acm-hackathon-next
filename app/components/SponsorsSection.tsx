@@ -54,38 +54,40 @@ const Sponsors = () => {
           alt="Silver Sponsors"
         />
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'center', gap: isSmallScreen ? 1 : 6, mb: 20, flexWrap: isSmallScreen ? 'wrap' : 'nowrap' }}>
-        <Image
-          src="/images/acm.jpeg"
-          width={isSmallScreen ? 150 : 150}
-          height={20}
-          alt="acm"
-        />
-        <Image
-          src="/images/aicte.jpeg"
-          width={isSmallScreen ? 150 : 150}
-          height={20}
-          alt="acm"
-        />
-        <Image
-          src="/images/iic.jpeg"
-          width={isSmallScreen ? 150 : 250}
-          height={20}
-          alt="acm"
-        />
-        <Image
-          src="/images/moe.jpeg"
-          width={isSmallScreen ? 150 : 250}
-          height={20}
-          alt="acm"
-        />
-        <Image
-          src="/images/eds.jpeg"
-          width={isSmallScreen ? 150 : 250}
-          height={20}
-          alt="eds"
-        />
-      </Box>
+      <Box
+  sx={{
+    display: 'flex',
+    justifyContent: 'center',
+    gap: isSmallScreen ? 1 : 6,
+    mb: 20,
+    flexWrap: isSmallScreen ? 'wrap' : 'nowrap',
+  }}
+>
+  {['acm', 'aicte', 'iic', 'moe', 'eds', 'ieee'].map((img, index) => (
+    <Box
+      key={index}
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(255, 255, 255, 0.4)', // White color with transparency
+        padding: 1,
+        borderRadius: 10,
+      }}
+    >
+      <Image
+        src={`/images/${img}.png`}
+        width={isSmallScreen ? 100 : 150} // Smaller width
+        height={15} // Smaller height
+        alt={img}
+        style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
+      />
+    </Box>
+  ))}
+</Box>
+
+
+
       <Box sx={{ display: 'flex', justifyContent: 'center', mb: 8 }}>
         <Image
           src="/images/2.png"
