@@ -232,7 +232,7 @@ function Home() {
                     color: "white",
                   }}
                 >
-                  26th August,2024.
+                  20th August,2024.
                 </Typography>
               </Typography>
               <Typography
