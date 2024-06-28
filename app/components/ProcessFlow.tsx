@@ -116,7 +116,7 @@ function ProcessFlow2() {
                   initial={{ x: index % 2 === 0 ? 350 : -350, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   viewport={{ once: false }}
-                  transition={{ type: "spring", stiffness: 60 }}
+                  transition={{ type: "spring", stiffness: 70, damping:12 }}
                 >
                   <h3 className="title">
                     <img

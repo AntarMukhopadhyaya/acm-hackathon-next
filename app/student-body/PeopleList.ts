@@ -21,7 +21,7 @@ export const people = [
     role: "CC Member",
     designation: "plz ignore this",
     image:
-      "/images/People/Student_Body/28CC0584-F89B-40BB-8986-C30688630D0C - Debmalya Dash.jpeg",
+      "/images/People/Student_Body/debmalya.jpeg",
   },
   {
     name: "Asim Mandal",
@@ -44,7 +44,7 @@ export const people = [
     role: "CC Member",
     designation: "plz ignore this",
     image:
-      "/images/People/Student_Body/20220927102738_IMG_2175 - Akash Sen.jpg",
+      "/images/People/Student_Body/akash.jpg",
   },
   {
     name: "Dripto Bhattacharyya",
