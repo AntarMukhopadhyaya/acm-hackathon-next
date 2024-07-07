@@ -106,8 +106,7 @@ function NavBar() {
                 </Link>
               </Box>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx:"3px" }}>
+                <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}>
                   <FlyoutLink href="/" FlyoutContent={MenuContent}>
                     <Typography
                       variant="body2"
@@ -117,13 +116,15 @@ function NavBar() {
                     >
                       Discover HACKSPIRE
                     </Typography>
-                    </FlyoutLink>
-                  </MenuItem>
-                
+                  </FlyoutLink>
+                </MenuItem>
+
                 <Link href="/problem-statement">
-                  <MenuItem  sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
+                  <MenuItem
+                    sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
+                  >
                     <Typography
-                    className="underline-animation"
+                      className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -134,8 +135,7 @@ function NavBar() {
                   </MenuItem>
                 </Link>
 
-                
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px" , mx:"3px"}}>
+                <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}>
                   <FlyoutLink href="#" FlyoutContent={TeamContent}>
                     <Typography
                       variant="body2"
@@ -145,14 +145,15 @@ function NavBar() {
                     >
                       Teams
                     </Typography>
-                    </FlyoutLink>
-                  </MenuItem>
-                
+                  </FlyoutLink>
+                </MenuItem>
 
                 <Link href="/guidelines">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx:"3px" }}>
+                  <MenuItem
+                    sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
+                  >
                     <Typography
-                    className="underline-animation"
+                      className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -164,9 +165,11 @@ function NavBar() {
                 </Link>
 
                 <Link href="/rules-regulations">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
+                  <MenuItem
+                    sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
+                  >
                     <Typography
-                    className="underline-animation"
+                      className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -178,9 +181,11 @@ function NavBar() {
                 </Link>
 
                 <Link href="/idea-template">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
+                  <MenuItem
+                    sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
+                  >
                     <Typography
-                    className="underline-animation"
+                      className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -191,9 +196,11 @@ function NavBar() {
                   </MenuItem>
                 </Link>
                 <Link href="/hackathon-details">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px", mx:"3px" }}>
+                  <MenuItem
+                    sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
+                  >
                     <Typography
-                    className="underline-animation"
+                      className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -204,9 +211,11 @@ function NavBar() {
                   </MenuItem>
                 </Link>
                 <Link href="/faq">
-                  <MenuItem sx={{ py: "5px", px: "10px", my: "6px",mx:"3px" }}>
+                  <MenuItem
+                    sx={{ py: "5px", px: "10px", my: "6px", mx: "3px" }}
+                  >
                     <Typography
-                    className="underline-animation"
+                      className="underline-animation"
                       variant="body2"
                       color="white"
                       fontSize="18px"
@@ -439,14 +448,6 @@ const MenuContent = () => {
             className="block hover:underline"
           >
             HACKSPIRE Themes
-          </a>
-        </h3>
-        <h3 className="font-semibold">
-          <a
-            onClick={() => scrollToSection("processflow")}
-            className="block hover:underline"
-          >
-            HACKSPIRE Process Flow
           </a>
         </h3>
         <h3 className="font-semibold">
