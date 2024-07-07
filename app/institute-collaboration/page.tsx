@@ -46,37 +46,17 @@ const Collaborators = () => {
   return (
     <div className="p-8 md:py-40 lg:px-16 lg:py-40 sm:py-40">
       <Heading title="INSTITUTE COLLABORATORS" isMobile={isMobile} />
-      <div className="flex items-center gap-10" style={{ flexWrap: "wrap" }}>
+      <div className="flex justify-center flex-wrap gap-10">
         {renderCards("Institute Collaboration")}
       </div>
 
-      <div className="bg-inherit" style={{ marginTop: "100px" }} />
-
+      {/* <div className="bg-inherit" style={{ marginTop: "100px" }} />
+      
       <Heading title="ACM STUDENT CHAPTER COLLABORATORS" isMobile={isMobile} />
       <div className="flex items-center gap-10" style={{ flexWrap: "wrap" }}>
         {renderCards("ACM Student Chapter")}
-      </div>
+      </div> */}
     </div>
-    // <div className="p-8 md:py-40 lg:px-16 lg:py-40 sm:py-40">
-    //   {/* <div className="bg-inherit" style={{ marginTop: "100px" }} /> */}
-    //   <Heading title="INSTITUTE COLLABORATORS" />
-    //   <div
-    //     className=" flex h-screen items-center gap-10"
-    //     style={{ flexWrap: "wrap" }}
-    //   >
-    //     {renderCards("ACM Student Chapter")}
-    //   </div>
-
-    //   <div className="bg-inherit" style={{ marginTop: "50px" }} />
-
-    //   <Heading title="ACM STUDENT CHAPTER COLLABORATORS" />
-    //   <div
-    //     className=" flex h-screen items-center gap-10"
-    //     style={{ flexWrap: "wrap" }}
-    //   >
-    //     renderCards("ACM Student Chapter")
-    //   </div>
-    // </div>
   );
 };
 
