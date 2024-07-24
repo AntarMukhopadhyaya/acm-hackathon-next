@@ -57,7 +57,7 @@ export default function Hero() {
                   fontSize: "22px",
                 }}
               >
-                A initiative by
+                An initiative by
               </Typography>
               <Typography
                 color="text.secondary"
