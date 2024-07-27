@@ -3,7 +3,7 @@ import './fonts/font.css';
 
 function Timer() {
   // Define the end time (set this to your desired end time)
-  const endTime = new Date("2024-07-31T23:59:59Z"); // Example end time
+  const endTime = new Date("2024-09-12T23:59:59Z"); // Example end time
 
   const calculateTimeLeft = () => {
     const now: Date = new Date();
